@@ -1,0 +1,135 @@
+:root {
+    --background-principal-containers: rgb(207,219,203, 0.8);
+    --vinotinto-mundial: #831145;
+    --grey-letters-labels: #5a5a5a;
+    --grey-letters-inputs: #939D92;
+    --sm: 12px;
+    --md: 16px;
+    --lg: 18px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+
+/* seccion del login */
+.login-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../assets/imgs/QATAR_Recurso\ 1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+    width: 80%;
+    height: 95%;
+    background: var(--background-principal-containers);
+    border-radius: 25px;
+}
+.login-logo {
+    margin-top: 15px;
+    width: 180px;
+}
+.login-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+.login-inputs-container {
+    width: 100%;
+}
+.label-hero {
+    padding-left: 10px;
+    color: var(--grey-letters-labels);
+    font-size: var(--sm);
+}
+.input-hero {
+    margin-bottom: 8px;
+    padding-left: 10px;
+    width: 92%;
+    height: 25px;
+    color: var(--grey-letters-inputs);
+    border: none;
+    border-left: 3px solid var(--vinotinto-mundial);
+}
+.check {
+    font-size: 12px;
+}
+.btn-hero {
+    margin-top: 10px;
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 13px;
+    color: white;
+    background: var(--vinotinto-mundial);
+    font-size: var(--md);
+    margin-bottom: 50px;
+}
+.socialMedias-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    width: 100%;
+    height: 50px;
+    border: 2px solid var(--vinotinto-mundial);
+    border-radius: 15px;
+}
+.socialMedias-title-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 42px;
+    width: 120%;
+    /* background: rgb(207,219,203, 0.2); */
+
+}
+.title-hero {
+    text-align: center;
+    font-size: 10px;
+}
+.socialMedias-icons-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.socialMedia-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 12px;
+}
+.socialMedia-div span {
+    font-size: 10px;
+    color: var(--vinotinto-mundial);
+}
+.socialMedias-icons {
+    width: 30px;
+}
+
+/* seccion de inscripcion.html */
+.inscription-logo {
+    width: 100px;
+}
