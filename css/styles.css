@@ -41,7 +41,7 @@ a {
 }
 .login-logo {
     margin-top: 15px;
-    width: 180px;
+    width: 220px;
 }
 .login-form-container {
     display: flex;
@@ -57,6 +57,8 @@ a {
     width: 100%;
 }
 .login-inputs-container {
+    display: flex;
+    flex-direction: column;
     width: 100%;
 }
 .label-hero {
@@ -101,7 +103,7 @@ a {
     position: absolute;
     display: flex;
     justify-content: center;
-    bottom: 42px;
+    bottom: 50px;
     width: 120%;
     /* background: rgb(207,219,203, 0.2); */
 
@@ -133,4 +135,12 @@ a {
 /* seccion de inscripcion.html */
 .inscription-logo {
     width: 150px;
+}
+.forget-container {
+    display: flex;
+    flex-direction: column;
+}
+.forget {
+    color: var(--vinotinto-mundial);
+    font-size: 10px;
 }
