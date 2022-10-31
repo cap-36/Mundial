@@ -93,7 +93,7 @@ a {
     display: flex;
     justify-content: center;
     margin-bottom: 15px;
-    width: 100%;
+    width: 80%;
     height: 50px;
     border: 2px solid var(--vinotinto-mundial);
     border-radius: 15px;
@@ -133,7 +133,7 @@ a {
 
 /* seccion de inscripcion.html */
 .inscription-logo {
-    width: 170px;
+    width: 150px;
 }
 .forget-container {
     display: flex;
