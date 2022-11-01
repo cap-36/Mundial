@@ -3,6 +3,7 @@
     --vinotinto-mundial: #831145;
     --grey-letters-labels: #5a5a5a;
     --grey-letters-inputs: #939D92;
+    --very-sm: 10px;
     --sm: 12px;
     --md: 16px;
     --lg: 18px;
@@ -23,7 +24,7 @@ a {
     align-items: center;
     width: 100%;
     height: 100vh;
-    background-image: url('../assets/imgs/QATAR_Recurso\ 1.png');
+    background-image: url('../assets/imgs/background-balones.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -93,7 +94,7 @@ a {
     display: flex;
     justify-content: center;
     margin-bottom: 15px;
-    width: 80%;
+    width: 100%;
     height: 50px;
     border: 2px solid var(--vinotinto-mundial);
     border-radius: 15px;
@@ -133,7 +134,8 @@ a {
 
 /* seccion de inscripcion.html */
 .inscription-logo {
-    width: 150px;
+    margin-top: 25px;
+    width: 200px;
 }
 .forget-container {
     display: flex;
@@ -146,6 +148,123 @@ a {
 }
 
 
+/* seccion index.html */
+.main-background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-image: url('../assets/imgs/QATAR_Recurso\ 43.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* .banner {
+    width: 100%;
+    height: 80px;
+    background: var(--vinotinto-mundial);
+} */
+.marcadores-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    width: 90%;
+}
+.marcadores-logo {
+    margin-bottom: 40px;
+    width: 250px;
+}
+.form-marcadores {
+    width: 100%;
+}
+.form-marcadores-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 288px);
+    grid-gap: 15px;
+}
+.cards-marcadores {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 10px;
+    height: 335px;
+    background: white;
+    border: 2px solid var(--vinotinto-mundial);
+}
+.cards-marcadores-title {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: -20px;
+    margin: 0;
+    width: 100%;
+}
+.cards-marcadores-title div {
+    padding: 5px;
+    width: auto;
+    height: auto;
+    background: var(--vinotinto-mundial);
+    border-radius: 10px;
+}
+.h3-hero {
+    text-align: center;
+    margin: 0;
+    color: white;
+}
+.info-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    margin-top: 20px;
+}
+.info-cards-container {
+    position: relative;
+    padding: 7px 0 2px 0;
+    width: 90%;
+    border-bottom: 1px solid var(--vinotinto-mundial);
+}
+.info-date {
+    position: absolute;
+    text-align: center;
+    padding: 0 5px;
+    top: -12px;
+    left: 0;
+    width: 110px;
+    background: #F9CECF;
+    border-radius: 8px;
+}
+.span-hero {
+    text-align: center;
+    width: 40px;
+    color: var(--vinotinto-mundial);
+    font-size: var(--very-sm);
+}
+.general-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.countries {
+    width: 30px;
+    height: 30px;
+}
+.input-marker {
+    text-align: center;
+    width: 20px;
+    border: 1px solid var(--vinotinto-mundial);
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+
 
 @media (min-width: 700px) {
     .login-container {
@@ -154,7 +273,13 @@ a {
     .login-form-container {
         width: 80%;
     }
+    .input-hero {
+        height: 30px;
+    }
     .btn-hero {
         width: 50%;
+    }
+    .socialMedias-container {
+        width: 80%;
     }
 }
