@@ -8,13 +8,25 @@
     --md: 16px;
     --lg: 18px;
 }
-body {
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+body {
     font-family: 'Rubik', sans-serif;
+}
+ul {
+    padding: 0;
+}
+li {
+    list-style: none;
 }
 a {
     text-decoration: none;
+}
+.inactive {
+    display: none;
 }
 
 /* seccion del login */
@@ -155,30 +167,200 @@ a {
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-image: url('../assets/imgs/QATAR_Recurso\ 43.png');
-    background-position: center;
+    background-image: url('../assets/imgs/background-balones.png');
+    background-position:initial;
     background-repeat: no-repeat;
     background-size: cover;
 }
-/* .banner {
+.menu {
+    display: block;
+    margin-left: 20px;
+    width: 30px;
+    height: 30px;
+}
+nav {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    width: 100%;
+    height: 40px;
+    background: #165499;
+}
+.desktop-menu {
+    display: none;
+}
+.desktop-menu ul {
+    display: flex;
+    margin: 0 40px;
+}
+.desktop-menu ul li {
+    margin-left: 30px;
+}
+.desktop-menu ul li a {
+    color: white;
+}
+.desktop-menu ul li a:hover {
+    border-bottom: 2px solid white;
+}
+.mobile-menu {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 40px;
+    background: #EAEAE8;
+}
+.href-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    width: 100%;
+}
+.href-mobile:nth-child(1) {
+    height: 60%;
+    border-bottom: 2px solid #165499;
+}
+.href-mobile:nth-child(2) {
+    height: 30%;
+}
+.href-mobile ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 90%;
+}
+.href-mobile ul li a {
+    color: #165499;
+    font-size: var(--lg);
+}
+.banner {
+    margin-top: 40px;
     width: 100%;
     height: 80px;
     background: var(--vinotinto-mundial);
-} */
+}
+.options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0 100px 0;
+    width: 90%;
+}
+.options-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 260px);
+    grid-gap: 60px;
+    justify-content: center;
+    width: 100%;
+}
+.options-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 260px;
+    background: rgb(207,219,203, 0.7);
+    border-radius: 25px;
+}
+.option-info {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.h3-options {
+    margin: 0;
+    color: var(--vinotinto-mundial);
+    font-size: 25px;
+    font-weight: 700;
+}
+.option-info img {
+    width: 100px;
+    height: 100px;
+}
+.option-btn {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 80%;
+}
+.option-btn div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    background: var(--vinotinto-mundial);
+    color: white;
+    border-radius: 10px;
+}
+footer {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    width: 100%; 
+    background: #165499;
+    color: white;
+}
+.footer-img {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: -27px;
+}
+footer ul {
+    margin: 0 40px;
+}
+footer ul li {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    width: 100%;
+}
+footer ul li span {
+    font-size: var(--sm);
+}
+footer ul li a {
+    color: white;
+    font-size: var(--sm);
+}
+.footer-left {
+    margin-top: 20px;
+    width: 50%;
+    text-align: left;
+}
+.footer-right {
+    margin-top: 20px;
+    width: 50%;
+}
+
 .marcadores-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 40px;
+    margin: 50px 0 100px;
     width: 90%;
 }
+.main-logo-container {
+    position: fixed;
+    z-index: 3;
+    top: 10px;
+}
 .marcadores-logo {
-    margin-bottom: 40px;
-    width: 250px;
+    width: 200px;
 }
 .h2-hero {
     text-align: center;
+    margin: 20px 0;
     color: white;
     font-size: 30px;
 }
@@ -245,7 +427,7 @@ a {
     padding: 0 5px;
     top: -12px;
     left: 0;
-    width: 110px;
+    width: 120px;
     background: #F9CECF;
     border-radius: 8px;
 }
@@ -278,7 +460,7 @@ input[type=number]::-webkit-outer-spin-button {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 70px;
     width: 100%;
 }
 .btn-marcadores button {
@@ -300,6 +482,14 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 /* seccion de posicion */
+.posiciones-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    width: 90%;
+}
 table {
     width: 100%;
     background: var(--vinotinto-mundial);
@@ -310,8 +500,39 @@ th {
 }
 
 
+/* seccion del reglamento */
+.reglamento-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+    width: 90%;
+}
+article {
+    padding: 15px;
+    width: 100%;
+    height: 700px;
+    background: rgb(207, 207, 207);
+    border-radius: 20px;
+    overflow-y: scroll;
+}
+.pdf {
+    width: 100%;
+    height: 100%;
+}
+
 
 @media (min-width: 700px) {
+    .desktop-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+        width: 100%;
+    }
+    .menu {
+        display: none;
+    }
     .login-container {
         width: 50%;
     }
@@ -326,6 +547,14 @@ th {
     }
     .socialMedias-container {
         width: 80%;
+    }
+    .options-card {
+        transform: scale(1);
+        transition: transform .3s ease-out;
+    }
+    .options-card:hover {
+        transform: scale(1.1);
+        transition: transform .3s ease-out;
     }
     .cards-marcadores {
         transform: scale(1);
