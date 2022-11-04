@@ -101,6 +101,9 @@ a {
     background: var(--vinotinto-mundial);
     font-size: var(--md);
 }
+.btn-hero:hover {
+    box-shadow: 0 4px 8px rgb(89 73 30 / 56%);
+}
 .socialMedias-container {
     position: relative;
     display: flex;
@@ -134,7 +137,6 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 12px;
 }
 .socialMedia-div span {
     font-size: 10px;
@@ -145,6 +147,16 @@ a {
 }
 
 /* seccion de inscripcion.html */
+.inscription-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-image: url('../assets/imgs/background-balones.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .inscription-logo {
     margin-top: 25px;
     width: 200px;
