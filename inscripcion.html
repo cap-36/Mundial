@@ -15,7 +15,11 @@
         <section class="login-container">
             <img class="inscription-logo" src="./assets/icons/icon-coaspharma.svg" alt="logo coaspharma">
             <div class="login-form-container">
-                <form action="" class="login-form">
+                <form method="post" class="login-form" id="formInscritos" action="index.html">
+                    <div class="login-inputs-container">
+                        <label class="label-hero" for="cedula">Cedula</label>
+                        <input class="input-hero" type="text" name="cedula" id="cedula" placeholder="Numero de cedula">
+                    </div>
                     <div class="login-inputs-container">
                         <label class="label-hero" for="nombres">Nombre Completo</label>
                         <input class="input-hero" type="text" name="nombres" id="nombres" placeholder="Nombres y Apellidos">
@@ -31,7 +35,7 @@
                     </div>
                     <div class="login-inputs-container">
                         <label class="label-hero" for="direccionr">Direccion</label>
-                        <input class="input-hero" type="text" name="direccionr" id="direccionr" placeholder="Direccion de residencia">
+                        <input class="input-hero" type="text" name="direccion" id="direccion" placeholder="Direccion de residencia">
                     </div>
 
                     <div class="login-inputs-container">
@@ -42,16 +46,37 @@
                         <label class="label-hero" for="nfarmacia">Farmacia</label>
                         <input class="input-hero" type="text" name="nfarmacia" id="nfarmacia" placeholder="Nombre de la farmacia - drogreria">
                     </div>
+
+                    <div class="inactive">
+                        <input class="input-hero" type="number" name="ncarton" id="ncarton">
+                    </div>
+                    <div class="inactive">
+                        <input class="input-hero" type="text" name="perfil" id="perfil" value="1">
+                    </div>
+                    <div class="inactive">
+                        <input class="input-hero" type="text" name="date" id="date">
+                    </div>
+
+                    <div class="inactive">
+                        <input class="input-hero" type="text" name="clave" id="clave" value="0">
+                    </div>
+                    <div class="inactive">
+                        <input class="input-hero" type="text" name="estado" id="estado" value="0">
+                    </div>
+                    <div class="inactive">
+                        <input class="input-hero" type="text" name="idUsuario" id="idUsuario" value="0">
+                    </div>
+
                     <div class="forget-container">
                         <a class="forget" href="#">Olvido su Contraseña</a>
                     </div>
-                    <button class="btn-hero">
+                    <button type="submit" class="btn-hero" id="btn-inscritos">
                         ENVIAR
                     </button>
                 </form>
             </div>
 
-            <div class="socialMedias-container">
+            <!-- <div class="socialMedias-container">
                 <div class="socialMedias-title-container">
                     <h2 class="title-hero">RECUERDA SEGUIRNOS EN NUESTRAS REDES</h2>
                 </div>
@@ -69,8 +94,10 @@
                         <span>DOLICOX</span>
                     </a>
                 </div>
-            </div>
+            </div> -->
         </section>
     </section>
+
+    <script src="./js/inscritos.js"></script>
 </body>
 </html>

@@ -15,7 +15,7 @@
         <section class="login-container">
             <img class="login-logo" src="./assets/imgs/Logos Polla_ViveDisfrutaGoza.png" alt="logo mundial">
             <div class="login-form-container">
-                <form action="" class="login-form">
+                <form method="POST" action="" class="login-form">
                     <div class="login-inputs-container">
                         <label class="label-hero" for="correo">Correo</label>
                         <input class="input-hero" type="text" name="correo" id="correo" placeholder="Ingrese su correo">
@@ -24,11 +24,17 @@
                         <label class="label-hero" for="ncarton">N. Carton</label>
                         <input class="input-hero" type="text" name="ncarton" id="ncarton" placeholder="Ingrese su numero de carton">
                     </div>
-                    <button type="button" class="btn-hero" id="btn-login">
+                    <button type="button" class="btn-hero login" id="btn-login">
                         ENTRAR
                     </button>
                 </form>
             </div>
+            <section class="warnings inactive">
+                <div>
+                    <img src="./assets/icons/icons8-no-hay-entrada-64.png" alt="icono de no">
+                    <span>Tu Correo o Numero de Carton no coinciden</span>
+                </div>
+            </section>
 
             <div class="socialMedias-container">
                 <div class="socialMedias-title-container">
@@ -52,6 +58,7 @@
         </section>
     </section>
 
+    <script src="./js/datosUsuario.js"></script>
     <script src="./js/login.js"></script>
 </body>
 </html>

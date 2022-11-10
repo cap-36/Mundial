@@ -1,0 +1,71 @@
+-- Table: usuarios
+
+-- DROP TABLE usuarios;
+
+CREATE TABLE usuarios
+(
+  cedula numeric, 
+  nombres character varying, 
+  correo character varying, 
+  telefono numeric, 
+  direccion character varying,
+  ciudad character varying, 
+  nfarmacia character varying,
+  carton character varying,
+  perfil numeric, -- Perfil
+  clave character varying, 
+  estado numeric, 
+  id_usuario numeric, 
+  fecha character varying, -- Fecha ingreso
+  CONSTRAINT usuarios_pkey PRIMARY KEY (correo, carton)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE usuarios
+  OWNER TO postgres;
+COMMENT ON TABLE usuarios
+  IS 'Usuarios registrados';
+COMMENT ON COLUMN usuarios.cedula IS 'Cedula';
+COMMENT ON COLUMN usuarios.nombres IS 'Nombres';
+COMMENT ON COLUMN usuarios.correo IS 'Correo electronico';
+COMMENT ON COLUMN usuarios.telefono IS 'Telefono';
+COMMENT ON COLUMN usuarios.direccion IS 'direccion';
+COMMENT ON COLUMN usuarios.ciudad IS 'Ciudad';
+COMMENT ON COLUMN usuarios.nfarmacia IS 'Nombre farmacia';
+COMMENT ON COLUMN usuarios.carton IS 'Numero de carton';
+COMMENT ON COLUMN usuarios.perfil IS 'Perfil';
+COMMENT ON COLUMN usuarios.clave IS 'Clave';
+COMMENT ON COLUMN usuarios.estado IS 'estado';
+COMMENT ON COLUMN usuarios.id_usuario IS 'Id usuario';
+COMMENT ON COLUMN usuarios.fecha IS 'Fecha ingreso';
+
+
+
+-- Table: marcadores
+
+-- DROP TABLE marcadores;
+
+CREATE TABLE marcadores
+(
+  carton integer NOT NULL,
+  cedula integer NOT NULL,
+  fase integer NOT NULL,
+  grupo character(1) NOT NULL,
+  perfil integer NOT NULL,
+  equipo_uno character varying NOT NULL,
+  marcador_uno integer,
+  equipo_dos character varying NOT NULL,
+  marcador_dos integer NOT NULL,
+  fecha date NOT NULL,
+  puntos integer,
+  real1 integer,
+  real2 integer,
+  fecha_actual timestamp without time zone,
+  CONSTRAINT marcadores_pkey PRIMARY KEY (carton, cedula, fase, grupo, perfil, equipo_uno, marcador_dos)
+)
+WITH (
+  OIDS=TRUE
+);
+ALTER TABLE marcadores
+  OWNER TO postgres;

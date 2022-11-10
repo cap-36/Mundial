@@ -42,9 +42,10 @@ a {
     background-size: cover;
 }
 .login-container {
+    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 0 20px;
     width: 80%;
@@ -54,7 +55,7 @@ a {
 }
 .login-logo {
     margin-top: 15px;
-    width: 220px;
+    width: 90%;
 }
 .login-form-container {
     display: flex;
@@ -82,11 +83,11 @@ a {
 .input-hero {
     margin-bottom: 8px;
     padding-left: 10px;
-    width: 92%;
+    width: 100%;
     height: 25px;
     color: var(--grey-letters-inputs);
     border: none;
-    border-left: 3px solid var(--vinotinto-mundial);
+    border-left: 4px solid var(--vinotinto-mundial);
 }
 .check {
     font-size: 12px;
@@ -103,6 +104,29 @@ a {
 }
 .btn-hero:hover {
     box-shadow: 0 4px 8px rgb(89 73 30 / 56%);
+}
+.warnings {
+    position: absolute;
+    z-index: 4;
+    bottom: 40px;
+    width: 80%;
+    height: 50px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(89 73 30 / 56%);
+}
+.warnings div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.warnings img {
+    margin: 10px;
+    width: 30px;
+    height: 30px;
+}
+.warnings span {
+    font-size: var(--sm);
 }
 .socialMedias-container {
     position: relative;
@@ -152,14 +176,15 @@ a {
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 100vh;
     background-image: url('../assets/imgs/background-balones.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .inscription-logo {
-    margin-top: 25px;
-    width: 200px;
+    margin-top: 10px;
+    width: 80%;
 }
 .forget-container {
     display: flex;
@@ -173,6 +198,18 @@ a {
 
 
 /* seccion index.html */
+.index-background {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-image: url('../assets/imgs/background-balones.png');
+    background-position:initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .main-background {
     display: flex;
     flex-direction: column;
@@ -218,6 +255,38 @@ nav {
 .desktop-menu ul li a:hover {
     border-bottom: 2px solid white;
 }
+.perfil:hover > .perfil-ul {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.perfil-ul {
+    position: absolute;
+    display: none !important;
+    padding: 15px;
+    top: 40px;
+    left: 95px;
+    width: auto;
+    height: auto;
+    background: rgb(207,219,203, 0.9);
+    border-radius: 10px;
+}
+.perfil-ul div {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-bottom: 5px;
+    border-bottom: 1px solid var(--vinotinto-mundial);
+}
+.perfil-ul span {  
+    color: #165499;
+    font-size: var(--md);
+}
+.perfil-ul input {
+    background: var(--background-principal-containers);
+    border: none;
+}
 .mobile-menu {
     position: fixed;
     width: 100%;
@@ -252,33 +321,48 @@ nav {
     font-size: var(--lg);
 }
 .banner {
-    margin-top: 40px;
+    position: relative;
+    top: 40px;
     width: 100%;
-    height: 80px;
-    background: var(--vinotinto-mundial);
+    height: 55px;
+    background-image: url("../assets/imgs/Banner_Farmacias_NAV.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.banner1 {
+    position: relative;
+    top: 40px;
+    width: 100%;
+    height: 74px;
+    background-image: url("../assets/imgs/Banner_Farmacias_Marcadores.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .options {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 40px 0 100px 0;
+    margin: 80px 0 100px 0;
     width: 90%;
 }
 .options-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 260px);
-    grid-gap: 60px;
-    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 240px);
+    grid-gap: 40px;
+    justify-content: space-around;
+    margin-top: 20px;
     width: 100%;
 }
 .options-card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     padding: 10px;
-    width: 260px;
+    width: 240px;
     background: rgb(207,219,203, 0.7);
     border-radius: 25px;
 }
@@ -311,6 +395,16 @@ nav {
     background: var(--vinotinto-mundial);
     color: white;
     border-radius: 10px;
+}
+.index-footer {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    width: 100%; 
+    background: #165499;
+    color: white;
 }
 footer {
     position: relative;
@@ -359,7 +453,7 @@ footer ul li a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 50px 0 100px;
+    margin: 100px 0 100px;
     width: 90%;
 }
 .main-logo-container {
@@ -477,7 +571,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .btn-marcadores button {
     padding: 10px 10px;
-    width: auto;
+    width: 80%;
     color: white;
     background: var(--vinotinto-mundial);
     border: none;
@@ -494,12 +588,36 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 /* seccion de posicion */
+.resultados-background {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../assets/imgs/background-balones.png');
+    background-position:initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.resultados-footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    width: 100%;
+    background: #165499;
+    color: white;
+}
 .posiciones-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 40px;
+    margin: 120px 0 40px 0;
     width: 90%;
 }
 table {
@@ -534,7 +652,21 @@ article {
 }
 
 
-@media (min-width: 700px) {
+@media (min-width: 425px) {
+    .banner {
+        height: 62px;
+    }
+    .banner1 {
+        height: 98px;
+    }
+}
+@media (min-width: 768px) {
+    .banner {
+        height: 87px;
+    }
+    .banner1 {
+        height: 178px;
+    }
     .desktop-menu {
         display: flex;
         justify-content: space-between;
@@ -548,8 +680,20 @@ article {
     .login-container {
         width: 50%;
     }
+    .login-logo {
+        width: 40%;
+    }
     .login-form-container {
         width: 80%;
+    }
+    .warnings {
+        bottom: 50px;
+    }
+    .inscription-logo {
+        width: 40%;
+    }
+    .label-hero {
+        font-size: var(--md);
     }
     .input-hero {
         height: 30px;
@@ -560,7 +704,12 @@ article {
     .socialMedias-container {
         width: 80%;
     }
+    .options-container {
+        grid-template-columns: repeat(auto-fit, 260px);
+    }
     .options-card {
+        width: 260px;
+        height: 280px;
         transform: scale(1);
         transition: transform .3s ease-out;
     }
@@ -571,9 +720,40 @@ article {
     .cards-marcadores {
         transform: scale(1);
             transition: transform 0.2s ease-out;
-        }
-        .cards-marcadores:hover {
-            transform: scale(1.1);
-            transition: transform 0.2s ease-in;
-        }
+    }
+    .cards-marcadores:hover {
+        transform: scale(1.1);
+        transition: transform 0.2s ease-in;
+    }
+    .btn-marcadores button {
+        width: 30%;
+        height: 40px;
+        font-size: var(--md);
+    }
+}
+
+@media (min-width: 1024px) {
+    .banner {
+        height: 113px;
+    }
+    .banner1 {
+        height: 237px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .banner {
+        height: 137px;
+    }
+    .banner1 {
+        height: 334px;
+    }
+    .options-container {
+        margin-top: 0;
+    }
+}
+@media (min-width: 2560px) {
+    .banner1 {
+        height: 592px;
+    }
 }
