@@ -482,9 +482,9 @@ footer ul li a {
 .cards-marcadores {
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     margin-top: 30px;
-    padding: 10px;
     height: 335px;
     background: white;
     box-shadow: 0 4px 8px rgb(89 73 30 / 56%);
@@ -517,14 +517,14 @@ footer ul li a {
 .info-cards {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: 50%;
-    margin-top: 20px;
+    margin-top: 37px;
+    padding: 10px;
 }
 .info-cards-container {
     position: relative;
-    padding: 7px 0 2px 0;
-    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 0 15px 0;
     /* border-bottom: 1px solid var(--vinotinto-mundial); */
 }
 .info-date {
@@ -533,20 +533,33 @@ footer ul li a {
     padding: 0 5px;
     top: -12px;
     left: 0;
-    width: 120px;
+    width: 125px;
+    background: #F9CECF;
+    border-radius: 8px;
+}
+.info-date1 {
+    position: absolute;
+    text-align: center;
+    padding: 0 5px;
+    top: -12px;
+    right: 0;
+    width: 125px;
     background: #F9CECF;
     border-radius: 8px;
 }
 .span-hero {
     text-align: center;
-    width: 40px;
+    width: 70px;
     color: var(--vinotinto-mundial);
     font-size: var(--very-sm);
+    font-weight: 700;
+    border: none;
 }
 .general-info {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    width: 50%;
 }
 .countries {
     width: 30px;

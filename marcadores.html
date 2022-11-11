@@ -109,6 +109,13 @@
                 <form class="form-marcadores" action="" id="formData">
                     <h2 class="h2-hero">Marcadores</h2>
                     <div class="form-marcadores-container">
+                        <div class="inactive">
+                            <input type="number" name="marcador-carton" id="marcador-carton" readonly> 
+                            <input type="number" name="marcador-cedula" id="marcador-cedula" readonly>
+                            <input type="number" name="marcador-perfil" id="marcador-perfil" value="1" readonly>
+                            <input type="number" name="marcador-fase" id="marcador-fase" value="1" readonly>
+                            <input type="text" name="marcador-fecha" id="marcador-fecha" readonly>
+                        </div>
                         <!-- grupo A -->
                         <div class="cards-marcadores">
                             <div class="cards-marcadores-title">
@@ -119,127 +126,113 @@
                             </div>
                             <div class="info-cards">
                                 <div class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">20 de Nov, 11:00 hrs</span>
-                                    </div>
                                     <div class="general-info">
-                                        <input class="span-hero" name="equipoUno" id="equipoUno" value="Qatar" readonly>
+                                        <div class="info-date">
+                                            <span class="span-hero">20 de Nov, 11:00 hrs</span>
+                                        </div>
+                                        <input type="text" class="span-hero" name="equipoUno" id="equipoUno" value="Qatar" readonly>
                                         <img class="countries" src="./assets/icons/qatar.svg" alt="bandera qatar">
                                         <input class="input-marker" name="marcadorUno" id="marcadorUno" type="number">
                                     </div>
-                                </div>
-                                <div class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">21 de Nov, 11:00 hrs</span>
-                                    </div>
-                                    <div class="general-info">
-                                        <p class="span-hero" name="equipoUno" id="equipoUno">Senegal</p>
-                                        <img class="countries" src="./assets/icons/senegal.svg" alt="bandera senegal">
-                                        <input class="input-marker" name="marcadorUno" id="" type="number">
-                                    </div>
-                                </div>
-                                <div class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">25 de Nov, 8:00 hrs</span>
-                                    </div>
-                                    <div class="general-info">
-                                        <span class="span-hero">Qatar</span>
-                                        <img class="countries" src="./assets/icons/qatar.svg" alt="bandera qatar">
-                                        <input class="input-marker" type="number">
-                                    </div>
-                                </div>
-                                <div class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">25 de Nov, 11:00 hrs</span>
-                                    </div>
-                                    <div class="general-info">
-                                        <span class="span-hero">Ecuador</span>
-                                        <img class="countries" src="./assets/icons/ecuador.svg" alt="bandera ecuador">
-                                        <input class="input-marker" type="number">
-                                    </div>
-                                </div>
-                                <div class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">29 de Nov, 10:00 hrs</span>
-                                    </div>
-                                    <div class="general-info">
-                                        <span class="span-hero">Qatar</span>
-                                        <img class="countries" src="./assets/icons/qatar.svg" alt="bandera qatar">
-                                        <input class="input-marker" type="number">
-                                    </div>
-                                </div>
-                                <div class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">29 de Nov, 10:00 hrs</span>
-                                    </div>
-                                    <div class="general-info">
-                                        <span class="span-hero">Ecuador</span>
-                                        <img class="countries" src="./assets/icons/ecuador.svg" alt="bandera ecuador">
-                                        <input class="input-marker" type="number">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="info-cards">
-                                <di class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">Estadio Al Bayt</span>
-                                    </div>
-                                    <div class="general-info">
+                                    <di class="general-info">
+                                        <div class="info-date1">
+                                            <span class="span-hero">Estadio Al Bayt</span>
+                                        </div>
                                         <input class="input-marker" name="marcadorDos" id="marcadorDos" type="number">
                                         <img class="countries" src="./assets/icons/ecuador.svg" alt="bandera de ecuador">
-                                        <p class="span-hero" name="equipoDos" id="equipoDos">Ecuador</p>
-                                    </div>
-                                </di>
-                                <di class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">Estadio Al Thumama</span>
+                                        <input type="text" class="span-hero" name="equipoDos" id="equipoDos" value="Ecuador" readonly>
+                                    </di>
+                                </div>
+                                <div class="info-cards-container">
+                                    <div class="general-info">
+                                        <div class="info-date">
+                                            <span class="span-hero">21 de Nov, 11:00 hrs</span>
+                                        </div>
+                                        <input type="text" class="span-hero" name="equipoTres" id="equipoTres" value="Senegal" readonly>
+                                        <img class="countries" src="./assets/icons/senegal.svg" alt="bandera senegal">
+                                        <input class="input-marker" name="marcadorTres" id="marcadorTres" type="number">
                                     </div>
                                     <div class="general-info">
-                                        <input class="input-marker" name="marcadorDos" id="marcadorDos" type="number">
+                                        <div class="info-date1">
+                                            <span class="span-hero">Estadio Al Thumama</span>
+                                        </div>
+                                        <input class="input-marker" name="marcadorCuatro" id="marcadorCuatro" type="number">
                                         <img class="countries" src="./assets/icons/paises bajos.svg" alt="bandera de pasises bajos">
-                                        <p class="span-hero" name="equipoDos" id="equipoDos">Paises bajos</p>
+                                        <input type="text" class="span-hero" name="equipoCuatro" id="equipoCuatro" value="Paises bajos" readonly>
                                     </div>
-                                </di>
-                                <di class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">Estadio Al Thumama</span>
+                                </div>
+                                <div class="info-cards-container">
+                                    <div class="general-info">
+                                        <div class="info-date">
+                                            <span class="span-hero">25 de Nov, 8:00 hrs</span>
+                                        </div>
+                                        <input class="span-hero" id="equipoCinco" name="equipoCinco" value="Qatar" readonly>
+                                        <img class="countries" src="./assets/icons/qatar.svg" alt="bandera qatar">
+                                        <input class="input-marker" id="marcadorCinco" name="marcadorCinco" type="number">
                                     </div>
                                     <div class="general-info">
-                                        <input class="input-marker" type="number">
+                                        <div class="info-date1">
+                                            <span class="span-hero">Estadio Al Thumama</span>
+                                        </div>
+                                        <input class="input-marker" id="marcadorSeis" name="marcadorSeis" type="number">
                                         <img class="countries" src="./assets/icons/senegal.svg" alt="bandera de senegal">
-                                        <span class="span-hero">Senegal</span>
+                                        <input class="span-hero" id="equipoSeis" name="equipoSeis" value="Senegal" readonly>
                                     </div>
-                                </di>
-                                <di class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">Estadio Interna Khalifa</span>
-                                    </div>
+                                </div>
+                                <div class="info-cards-container">
                                     <div class="general-info">
-                                        <input class="input-marker" type="number">
+                                        <div class="info-date">
+                                            <span class="span-hero">25 de Nov, 11:00 hrs</span>
+                                        </div>
+                                        <input class="span-hero" id="equipoSiete" name="equipoSiete" value="Ecuador" readonly>
+                                        <img class="countries" src="./assets/icons/ecuador.svg" alt="bandera ecuador">
+                                        <input class="input-marker" id="marcadorSiete" name="marcadorSiete" type="number">
+                                    </div>
+                                    <di class="general-info">
+                                        <div class="info-date1">
+                                            <span class="span-hero">Estadio Interna Khalifa</span>
+                                        </div>
+                                        <input class="input-marker" id="marcadorOcho" name="marcadorOcho" type="number">
                                         <img class="countries" src="./assets/icons/paises bajos.svg" alt="bandera de pasises bajos">
-                                        <span class="span-hero">Paises bajos</span>
-                                    </div>
-                                </di>
-                                <di class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">Estadio Al Bayt</span>
-                                    </div>
+                                        <input class="span-hero" id="equipoOcho" name="equipoOcho" value="Paises bajos" readonly>
+                                    </di>
+                                </div>
+                                <div class="info-cards-container">
                                     <div class="general-info">
-                                        <input class="input-marker" type="number">
+                                        <div class="info-date">
+                                            <span class="span-hero">29 de Nov, 10:00 hrs</span>
+                                        </div>
+                                        <input id="equipoNueve" name="equipoNueve" value="Qatar" class="span-hero" readonly>
+                                        <img class="countries" src="./assets/icons/qatar.svg" alt="bandera qatar">
+                                        <input type="number" class="input-marker" id="marcadorNueve" name="marcadorNueve" >
+                                    </div>
+                                    <di class="general-info">
+                                        <div class="info-date1">
+                                            <span class="span-hero">Estadio Al Bayt</span>
+                                        </div>
+                                        <input class="input-marker" id="marcadorDiez" name="marcadorDiez" type="number">
                                         <img class="countries" src="./assets/icons/paises bajos.svg" alt="bandera de pasises bajos">
-                                        <span class="span-hero">Paises bajos</span>
-                                    </div>
-                                </di>
-                                <di class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">Estadio Interna Khalifa</span>
-                                    </div>
+                                        <input id="equipoDiez" name="equipoDiez" value="Paises bajos" class="span-hero" readonly>
+                                    </di>
+                                </div>
+                                <div class="info-cards-container">
                                     <div class="general-info">
-                                        <input class="input-marker" type="number">
+                                        <div class="info-date">
+                                            <span class="span-hero">29 de Nov, 10:00 hrs</span>
+                                        </div>
+                                        <input id="equipoOnce" name="equipoOnce" value="Ecuador" class="span-hero" readonly>
+                                        <img class="countries" src="./assets/icons/ecuador.svg" alt="bandera ecuador">
+                                        <input class="input-marker" id="marcadorOnce" name="marcadorOnce" type="number">
+                                    </div>
+                                    <di class="general-info">
+                                        <div class="info-date1">
+                                            <span class="span-hero">Estadio Interna Khalifa</span>
+                                        </div>
+                                        <input class="input-marker" id="marcadorDoce" name="marcadorDoce" type="number">
                                         <img class="countries" src="./assets/icons/senegal.svg" alt="bandera de senegal">
-                                        <span class="span-hero">Senegal</span>
-                                    </div>
-                                </di>
+                                        <input id="equipoDoce" name="equipoDoce" value="Senegal" class="span-hero" readonly>
+                                    </di>
+                                </div> 
                             </div>
                         </div>
                         <!-- grupo B -->
@@ -251,127 +244,113 @@
                             </div>
                             <div class="info-cards">
                                 <div class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">21 de Nov, 8:00 hrs</span>
-                                    </div>
                                     <div class="general-info">
-                                        <span class="span-hero">Inglaterra</span>
+                                        <div class="info-date">
+                                            <span class="span-hero">21 de Nov, 8:00 hrs</span>
+                                        </div>
+                                        <input id="equipo13" name="equipo13" value="Inglaterra" class="span-hero" readonly>
                                         <img class="countries" src="./assets/icons/inglaterra (2).svg" alt="bandera inglaterra">
-                                        <input class="input-marker" type="number">
+                                        <input class="input-marker" id="marcador13" name="marcador13" type="number">
                                     </div>
-                                </div>
-                                <div class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">21 de Nov, 14:00 hrs</span>
-                                    </div>
-                                    <div class="general-info">
-                                        <span class="span-hero">USA</span>
-                                        <img class="countries" src="./assets/icons/usa.svg" alt="bandera usa">
-                                        <input class="input-marker" type="number">
-                                    </div>
-                                </div>
-                                <div class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">25 de Nov, 5:00 hrs</span>
-                                    </div>
-                                    <div class="general-info">
-                                        <span class="span-hero">Iran</span>
-                                        <img class="countries" src="./assets/icons/iran.svg" alt="bandera iran">
-                                        <input class="input-marker" type="number">
-                                    </div>
-                                </div>
-                                <div class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">25 de Nov, 14:00 hrs</span>
-                                    </div>
-                                    <div class="general-info">
-                                        <span class="span-hero">Inglaterra</span>
-                                        <img class="countries" src="./assets/icons/inglaterra (2).svg" alt="bandera inglaterra">
-                                        <input class="input-marker" type="number">
-                                    </div>
-                                </div>
-                                <div class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">29 de Nov, 14:00 hrs</span>
-                                    </div>
-                                    <div class="general-info">
-                                        <span class="span-hero">Inglaterra</span>
-                                        <img class="countries" src="./assets/icons/inglaterra (2).svg" alt="bandera inglaterra">
-                                        <input class="input-marker" type="number">
-                                    </div>
-                                </div>
-                                <div class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">29 de Nov, 14:00 hrs</span>
-                                    </div>
-                                    <div class="general-info">
-                                        <span class="span-hero">Iran</span>
-                                        <img class="countries" src="./assets/icons/iran.svg" alt="bandera iran">
-                                        <input class="input-marker" type="number">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="info-cards">
-                                <di class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">Estadio Interna Khalifa</span>
-                                    </div>
-                                    <div class="general-info">
-                                        <input class="input-marker" type="number">
+                                    <di class="general-info">
+                                        <div class="info-date1">
+                                            <span class="span-hero">Estadio Interna Khalifa</span>
+                                        </div>
+                                        <input class="input-marker" id="marcador14" name="marcador14" type="number">
                                         <img class="countries" src="./assets/icons/iran.svg" alt="bandera de iran">
-                                        <span class="span-hero">Iran</span>
-                                    </div>
-                                </di>
-                                <di class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">Estadio Ahmed Bin Ali</span>
-                                    </div>
+                                        <input id="equipo14" name="equipo14" value="Iran" class="span-hero" readonly>
+                                    </di>
+                                </div>
+                                <div class="info-cards-container">
                                     <div class="general-info">
-                                        <input class="input-marker" type="number">
+                                        <div class="info-date">
+                                            <span class="span-hero">21 de Nov, 14:00 hrs</span>
+                                        </div>
+                                        <input id="equipo15" name="equipo15" value="USA" class="span-hero" readonly>
+                                        <img class="countries" src="./assets/icons/usa.svg" alt="bandera usa">
+                                        <input class="input-marker" id="marcador15" name="marcador15" type="number">
+                                    </div>
+                                    <di class="general-info">
+                                        <div class="info-date1">
+                                            <span class="span-hero">Estadio Ahmed Bin Ali</span>
+                                        </div>
+                                        <input class="input-marker" id="marcador16" name="marcador16" type="number">
                                         <img class="countries" src="./assets/icons/gales.svg" alt="bandera de gales">
-                                        <span class="span-hero">Gales</span>
-                                    </div>
-                                </di>
-                                <di class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">Estadio Ahmed Bin Ali</span>
-                                    </div>
+                                        <input id="equipo16" name="equipo16" value="Gales" class="span-hero" readonly>
+                                    </di>
+                                </div>
+                                <div class="info-cards-container">
                                     <div class="general-info">
-                                        <input class="input-marker" type="number">
+                                        <div class="info-date">
+                                            <span class="span-hero">25 de Nov, 5:00 hrs</span>
+                                        </div>
+                                        <input id="equipo17" name="equipo17" value="Iran" class="span-hero" readonly>
+                                        <img class="countries" src="./assets/icons/iran.svg" alt="bandera iran">
+                                        <input class="input-marker" id="marcador17" name="marcador17" type="number">
+                                    </div>
+                                    <di class="general-info">
+                                        <div class="info-date1">
+                                            <span class="span-hero">Estadio Ahmed Bin Ali</span>
+                                        </div>
+                                        <input class="input-marker" id="marcador18" name="marcador18" type="number">
                                         <img class="countries" src="./assets/icons/gales.svg" alt="bandera de gales">
-                                        <span class="span-hero">Gales</span>
-                                    </div>
-                                </di>
-                                <di class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">Estadio Al Bayn</span>
-                                    </div>
+                                        <input id="equipo18" name="equipo18" value="Gales" class="span-hero" readonly>
+                                    </di>
+                                </div>
+                                <div class="info-cards-container">
                                     <div class="general-info">
-                                        <input class="input-marker" type="number">
+                                        <div class="info-date">
+                                            <span class="span-hero">25 de Nov, 14:00 hrs</span>
+                                        </div>
+                                        <input id="equipo19" name="equipo19" value="Inglaterra" class="span-hero" readonly>
+                                        <img class="countries" src="./assets/icons/inglaterra (2).svg" alt="bandera inglaterra">
+                                        <input class="input-marker" id="marcador19" name="marcador19" type="number">
+                                    </div>
+                                    <di class="general-info">
+                                        <div class="info-date1">
+                                            <span class="span-hero">Estadio Al Bayn</span>
+                                        </div>
+                                        <input class="input-marker" id="marcador20" name="marcador20" type="number">
                                         <img class="countries" src="./assets/icons/usa.svg" alt="bandera de usa">
-                                        <span class="span-hero">USA</span>
-                                    </div>
-                                </di>
-                                <di class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">Estadio Ahmed Bin Ali</span>
-                                    </div>
+                                        <input id="equipo20" name="equipo20" value="USA" class="span-hero" readonly>
+                                    </di>
+                                </div>
+                                <div class="info-cards-container">
                                     <div class="general-info">
-                                        <input class="input-marker" type="number">
+                                        <div class="info-date">
+                                            <span class="span-hero">29 de Nov, 14:00 hrs</span>
+                                        </div>
+                                        <input id="equipo21" name="equipo21" value="Inglaterra" class="span-hero" readonly>
+                                        <img class="countries" src="./assets/icons/inglaterra (2).svg" alt="bandera inglaterra">
+                                        <input class="input-marker" id="marcador21" name="marcador21" type="number">
+                                    </div>
+                                    <di class="general-info">
+                                        <div class="info-date1">
+                                            <span class="span-hero">Estadio Ahmed Bin Ali</span>
+                                        </div>
+                                        <input class="input-marker" id="marcador22" name="marcador22" type="number">
                                         <img class="countries" src="./assets/icons/gales.svg" alt="bandera de gales">
-                                        <span class="span-hero">Gales</span>
-                                    </div>
-                                </di>
-                                <di class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">Estadio Al Thumama</span>
-                                    </div>
+                                        <input id="equipo22" name="equipo22" value="Gales" class="span-hero" readonly>
+                                    </di>
+                                </div>
+                                <div class="info-cards-container">
                                     <div class="general-info">
-                                        <input class="input-marker" type="number">
-                                        <img class="countries" src="./assets/icons/usa.svg" alt="bandera de usa">
-                                        <span class="span-hero">USA</span>
+                                        <div class="info-date">
+                                            <span class="span-hero">29 de Nov, 14:00 hrs</span>
+                                        </div>
+                                        <input id="equipo23" name="equipo23" value="Iran" class="span-hero" readonly>
+                                        <img class="countries" src="./assets/icons/iran.svg" alt="bandera iran">
+                                        <input class="input-marker" id="marcador23" name="marcador23" type="number">
                                     </div>
-                                </di>
+                                    <di class="general-info">
+                                        <div class="info-date1">
+                                            <span class="span-hero">Estadio Al Thumama</span>
+                                        </div>
+                                        <input class="input-marker" id="marcador24" name="marcador24" type="number">
+                                        <img class="countries" src="./assets/icons/usa.svg" alt="bandera de usa">
+                                        <input id="equipo24" name="equipo24" value="USA" class="span-hero" readonly>
+                                    </di>
+                                </div> 
                             </div>
                         </div>
                         <!-- grupo C -->
@@ -383,127 +362,113 @@
                             </div>
                             <div class="info-cards">
                                 <div class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">22 de Nov, 5:00 hrs</span>
-                                    </div>
                                     <div class="general-info">
-                                        <span class="span-hero">Argentina</span>
+                                        <div class="info-date">
+                                            <span class="span-hero">22 de Nov, 5:00 hrs</span>
+                                        </div>
+                                        <input id="equipo25" name="equipo25" value="Argentina" readonly class="span-hero">
                                         <img class="countries" src="./assets/icons/argentina.svg" alt="bandera argentina">
-                                        <input class="input-marker" type="number">
+                                        <input class="input-marker" id="marcador25" name="marcador25" type="number">
                                     </div>
-                                </div>
-                                <div class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">22 de Nov, 11:00 hrs</span>
-                                    </div>
-                                    <div class="general-info">
-                                        <span class="span-hero">Mexico</span>
-                                        <img class="countries" src="./assets/icons/mexico.svg" alt="bandera mexico">
-                                        <input class="input-marker" type="number">
-                                    </div>
-                                </div>
-                                <div class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">26 de Nov, 8:00 hrs</span>
-                                    </div>
-                                    <div class="general-info">
-                                        <span class="span-hero">Arabia Saudita</span>
-                                        <img class="countries" src="./assets/icons/arabia saudita.svg" alt="bandera arabia saudita">
-                                        <input class="input-marker" type="number">
-                                    </div>
-                                </div>
-                                <div class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">26 de Nov, 14:00 hrs</span>
-                                    </div>
-                                    <div class="general-info">
-                                        <span class="span-hero">Argentina</span>
-                                        <img class="countries" src="./assets/icons/argentina.svg" alt="bandera argentina">
-                                        <input class="input-marker" type="number">
-                                    </div>
-                                </div>
-                                <div class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">30 de Nov, 14:00 hrs</span>
-                                    </div>
-                                    <div class="general-info">
-                                        <span class="span-hero">Argentina</span>
-                                        <img class="countries" src="./assets/icons/argentina.svg" alt="bandera argentina">
-                                        <input class="input-marker" type="number">
-                                    </div>
-                                </div>
-                                <div class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">30 de Nov, 14:00 hrs</span>
-                                    </div>
-                                    <div class="general-info">
-                                        <span class="span-hero">Arabia Saudita</span>
-                                        <img class="countries" src="./assets/icons/arabia saudita.svg" alt="bandera arabia saudita">
-                                        <input class="input-marker" type="number">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="info-cards">
-                                <di class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">Estadio Lusail</span>
-                                    </div>
-                                    <div class="general-info">
-                                        <input class="input-marker" type="number">
+                                    <di class="general-info">
+                                        <div class="info-date1">
+                                            <span class="span-hero">Estadio Lusail</span>
+                                        </div>
+                                        <input class="input-marker" id="marcador26" name="marcador26" type="number">
                                         <img class="countries" src="./assets/icons/arabia saudita.svg" alt="bandera de arabia saudita">
-                                        <span class="span-hero">Arabia Saudita</span>
-                                    </div>
-                                </di>
-                                <di class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">Estadio 974</span>
-                                    </div>
+                                        <input id="equipo26" name="equipo26" value="Arabia Saudita" readonly class="span-hero">
+                                    </di>
+                                </div>
+                                <div class="info-cards-container">
                                     <div class="general-info">
-                                        <input class="input-marker" type="number">
+                                        <div class="info-date">
+                                            <span class="span-hero">22 de Nov, 11:00 hrs</span>
+                                        </div>
+                                        <input id="equipo27" name="equipo27" value="Mexico" readonly class="span-hero">
+                                        <img class="countries" src="./assets/icons/mexico.svg" alt="bandera mexico">
+                                        <input class="input-marker" id="marcador27" name="marcador27" type="number">
+                                    </div>
+                                    <di class="general-info">
+                                        <div class="info-date1">
+                                            <span class="span-hero">Estadio 974</span>
+                                        </div>
+                                        <input class="input-marker" id="marcador28" name="marcador28" type="number">
                                         <img class="countries" src="./assets/icons/polonia.svg" alt="bandera de polonia">
-                                        <span class="span-hero">Polonia</span>
-                                    </div>
-                                </di>
-                                <di class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">Estadio Ciu. Educación</span>
-                                    </div>
+                                        <input id="equipo28" name="equipo28" value="Polonia" readonly class="span-hero">
+                                    </di>
+                                </div>
+                                <div class="info-cards-container">
                                     <div class="general-info">
-                                        <input class="input-marker" type="number">
+                                        <div class="info-date">
+                                            <span class="span-hero">26 de Nov, 8:00 hrs</span>
+                                        </div>
+                                        <input id="equipo29" name="equipo29" value="Arabia Saudita" readonly class="span-hero">
+                                        <img class="countries" src="./assets/icons/arabia saudita.svg" alt="bandera arabia saudita">
+                                        <input class="input-marker" id="marcador29" name="marcador29" type="number">
+                                    </div>
+                                    <di class="general-info">
+                                        <div class="info-date1">
+                                            <span class="span-hero">Estadio Ciu. Educación</span>
+                                        </div>
+                                        <input class="input-marker" id="marcador30" name="marcador30" type="number">
                                         <img class="countries" src="./assets/icons/polonia.svg" alt="bandera de polonia">
-                                        <span class="span-hero">Polonia</span>
-                                    </div>
-                                </di>
-                                <di class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">Estadio Lusail</span>
-                                    </div>
+                                        <input id="equipo30" name="equipo30" value="Polonia" readonly class="span-hero">
+                                    </di>
+                                </div>
+                                <div class="info-cards-container">
                                     <div class="general-info">
-                                        <input class="input-marker" type="number">
+                                        <div class="info-date">
+                                            <span class="span-hero">26 de Nov, 14:00 hrs</span>
+                                        </div>
+                                        <input id="equipo31" name="equipo31" value="Argentina" readonly class="span-hero">
+                                        <img class="countries" src="./assets/icons/argentina.svg" alt="bandera argentina">
+                                        <input class="input-marker" id="marcador31" name="marcador31" type="number">
+                                    </div>
+                                    <di class="general-info">
+                                        <div class="info-date1">
+                                            <span class="span-hero">Estadio Lusail</span>
+                                        </div>
+                                        <input class="input-marker" id="marcador32" name="marcador32" type="number">
                                         <img class="countries" src="./assets/icons/mexico.svg" alt="bandera de mexico">
-                                        <span class="span-hero">México</span>
-                                    </div>
-                                </di>
-                                <di class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">Estadio 974</span>
-                                    </div>
+                                        <input id="equipo32" name="equipo32" value="México" readonly class="span-hero">
+                                    </di>
+                                </div>
+                                <div class="info-cards-container">
                                     <div class="general-info">
-                                        <input class="input-marker" type="number">
+                                        <div class="info-date">
+                                            <span class="span-hero">30 de Nov, 14:00 hrs</span>
+                                        </div>
+                                        <input id="equipo33" name="equipo33" value="Argentina" readonly class="span-hero">
+                                        <img class="countries" src="./assets/icons/argentina.svg" alt="bandera argentina">
+                                        <input class="input-marker" id="marcador33" name="marcador33" type="number">
+                                    </div>
+                                    <di class="general-info">
+                                        <div class="info-date1">
+                                            <span class="span-hero">Estadio 974</span>
+                                        </div>
+                                        <input class="input-marker" id="marcador34" name="marcador34" type="number">
                                         <img class="countries" src="./assets/icons/polonia.svg" alt="bandera de polonia">
-                                        <span class="span-hero">Polonia</span>
-                                    </div>
-                                </di>
-                                <di class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">Estadio Lusail</span>
-                                    </div>
+                                        <input id="equipo34" name="equipo34" value="Polonia" readonly class="span-hero">
+                                    </di>
+                                </div>
+                                <div class="info-cards-container">
                                     <div class="general-info">
-                                        <input class="input-marker" type="number">
-                                        <img class="countries" src="./assets/icons/mexico.svg" alt="bandera de mexico">
-                                        <span class="span-hero">México</span>
+                                        <div class="info-date1">
+                                            <span class="span-hero">30 de Nov, 14:00 hrs</span>
+                                        </div>
+                                        <input id="equipo35" name="equipo35" value="Arabia Saudita" readonly class="span-hero">
+                                        <img class="countries" src="./assets/icons/arabia saudita.svg" alt="bandera arabia saudita">
+                                        <input class="input-marker" id="marcador35" name="marcador35" type="number">
                                     </div>
-                                </di>
+                                    <di class="general-info">
+                                        <div class="info-date">
+                                            <span class="span-hero">Estadio Lusail</span>
+                                        </div>
+                                        <input class="input-marker" id="marcador36" name="marcador36" type="number">
+                                        <img class="countries" src="./assets/icons/mexico.svg" alt="bandera de mexico">
+                                        <input id="equipo36" name="equipo36" value="México" readonly class="span-hero">
+                                    </di>
+                                </div>
                             </div>
                         </div>
                         <!-- grupo D -->
@@ -515,127 +480,113 @@
                             </div>
                             <div class="info-cards">
                                 <div class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">22 de Nov, 8:00 hrs</span>
-                                    </div>
                                     <div class="general-info">
-                                        <span class="span-hero">Dinamarca</span>
+                                        <div class="info-date">
+                                            <span class="span-hero">22 de Nov, 8:00 hrs</span>
+                                        </div>
+                                        <input id="equipo37" name="equipo37" value="Dinamarca" readonly class="span-hero">
                                         <img class="countries" src="./assets/icons/dinamarca.svg" alt="bandera dinamarca">
-                                        <input class="input-marker" type="number">
+                                        <input class="input-marker" id="marcador37" name="marcador37"  type="number">
                                     </div>
-                                </div>
-                                <div class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">22 de Nov, 14:00 hrs</span>
-                                    </div>
-                                    <div class="general-info">
-                                        <span class="span-hero">Francia</span>
-                                        <img class="countries" src="./assets/icons/francia.svg" alt="bandera francia">
-                                        <input class="input-marker" type="number">
-                                    </div>
-                                </div>
-                                <div class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">26 de Nov, 5:00 hrs</span>
-                                    </div>
-                                    <div class="general-info">
-                                        <span class="span-hero">Australia</span>
-                                        <img class="countries" src="./assets/icons/australia.svg" alt="bandera australia">
-                                        <input class="input-marker" type="number">
-                                    </div>
-                                </div>
-                                <div class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">26 de Nov, 11:00 hrs</span>
-                                    </div>
-                                    <div class="general-info">
-                                        <span class="span-hero">Francia</span>
-                                        <img class="countries" src="./assets/icons/francia.svg" alt="bandera francia">
-                                        <input class="input-marker" type="number">
-                                    </div>
-                                </div>
-                                <div class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">30 de Nov, 10:00 hrs</span>
-                                    </div>
-                                    <div class="general-info">
-                                        <span class="span-hero">Australia</span>
-                                        <img class="countries" src="./assets/icons/australia.svg" alt="bandera australia">
-                                        <input class="input-marker" type="number">
-                                    </div>
-                                </div>
-                                <div class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">30 de Nov, 10:00 hrs</span>
-                                    </div>
-                                    <div class="general-info">
-                                        <span class="span-hero">Francia</span>
-                                        <img class="countries" src="./assets/icons/francia.svg" alt="bandera francia">
-                                        <input class="input-marker" type="number">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="info-cards">
-                                <di class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">Estadio Ciu. Educación</span>
-                                    </div>
-                                    <div class="general-info">
-                                        <input class="input-marker" type="number">
+                                    <di class="general-info">
+                                        <div class="info-date1">
+                                            <span class="span-hero">Estadio Ciu. Educación</span>
+                                        </div>
+                                        <input class="input-marker" id="marcador38" name="marcador38"  type="number">
                                         <img class="countries" src="./assets/icons/tunez.svg" alt="bandera de tunez">
-                                        <span class="span-hero">Túnez</span>
-                                    </div>
-                                </di>
-                                <di class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">Estadio Al Janoub</span>
-                                    </div>
+                                        <input id="equipo38" name="equipo38" value="Túnez" readonly class="span-hero">
+                                    </di>
+                                </div>
+                                <div class="info-cards-container">
                                     <div class="general-info">
-                                        <input class="input-marker" type="number">
+                                        <div class="info-date">
+                                            <span class="span-hero">22 de Nov, 14:00 hrs</span>
+                                        </div>
+                                        <input id="equipo39" name="equipo39" value="Francia" readonly class="span-hero">
+                                        <img class="countries" src="./assets/icons/francia.svg" alt="bandera francia">
+                                        <input class="input-marker" id="marcador39" name="marcador39"  type="number">
+                                    </div>
+                                    <di class="general-info">
+                                        <div class="info-date1">
+                                            <span class="span-hero">Estadio Al Janoub</span>
+                                        </div>
+                                        <input class="input-marker" id="marcador40" name="marcador40"  type="number">
                                         <img class="countries" src="./assets/icons/australia.svg" alt="bandera de australia">
-                                        <span class="span-hero">Australia</span>
-                                    </div>
-                                </di>
-                                <di class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">Estadio Al Janoub</span>
-                                    </div>
+                                        <input id="equipo40" name="equipo40" value="Australia" readonly class="span-hero">
+                                    </di>
+                                </div>
+                                <div class="info-cards-container">
                                     <div class="general-info">
-                                        <input class="input-marker" type="number">
+                                        <div class="info-date">
+                                            <span class="span-hero">26 de Nov, 5:00 hrs</span>
+                                        </div>
+                                        <input id="equipo41" name="equipo41" value="Australia" readonly class="span-hero">
+                                        <img class="countries" src="./assets/icons/australia.svg" alt="bandera australia">
+                                        <input class="input-marker" id="marcador41" name="marcador41" type="number">
+                                    </div>
+                                    <di class="general-info">
+                                        <div class="info-date1">
+                                            <span class="span-hero">Estadio Al Janoub</span>
+                                        </div>
+                                        <input class="input-marker" id="marcador42" name="marcador42" type="number">
                                         <img class="countries" src="./assets/icons/tunez.svg" alt="bandera de tunez">
-                                        <span class="span-hero">Túnez</span>
-                                    </div>
-                                </di>
-                                <di class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">Estadio 974</span>
-                                    </div>
+                                        <input id="equipo42" name="equipo42" value="Túnez" readonly class="span-hero">
+                                    </di>
+                                </div>
+                                <div class="info-cards-container">
                                     <div class="general-info">
-                                        <input class="input-marker" type="number">
+                                        <div class="info-date">
+                                            <span class="span-hero">26 de Nov, 11:00 hrs</span>
+                                        </div>
+                                        <input id="equipo43" name="equipo43" value="Francia" readonly class="span-hero">
+                                        <img class="countries" src="./assets/icons/francia.svg" alt="bandera francia">
+                                        <input class="input-marker" id="marcador43" name="marcador43" type="number">
+                                    </div>
+                                    <di class="general-info">
+                                        <div class="info-date1">
+                                            <span class="span-hero">Estadio 974</span>
+                                        </div>
+                                        <input class="input-marker" id="marcador44" name="marcador44" type="number">
                                         <img class="countries" src="./assets/icons/dinamarca.svg" alt="bandera de dinamarca">
-                                        <span class="span-hero">Dinamarca</span>
-                                    </div>
-                                </di>
-                                <di class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">Estadio Al Janoub</span>
-                                    </div>
+                                        <input id="equipo44" name="equipo44" value="Dinamarca" readonly class="span-hero">
+                                    </di>
+                                </div>
+                                <div class="info-cards-container">
                                     <div class="general-info">
-                                        <input class="input-marker" type="number">
+                                        <div class="info-date">
+                                            <span class="span-hero">30 de Nov, 10:00 hrs</span>
+                                        </div>
+                                        <input id="equipo45" name="equipo45" value="Australia" readonly class="span-hero">
+                                        <img class="countries" src="./assets/icons/australia.svg" alt="bandera australia">
+                                        <input class="input-marker" id="marcador45" name="marcador45" type="number">
+                                    </div>
+                                    <di class="general-info">
+                                        <div class="info-date1">
+                                            <span class="span-hero">Estadio Al Janoub</span>
+                                        </div>
+                                        <input class="input-marker" id="marcador46" name="marcador46" type="number">
                                         <img class="countries" src="./assets/icons/dinamarca.svg" alt="bandera de dinamarca">
-                                        <span class="span-hero">Dinamarca</span>
-                                    </div>
-                                </di>
-                                <di class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">Estadio Ciu. Educación</span>
-                                    </div>
+                                        <input id="equipo46" name="equipo46" value="Dinamarca" readonly class="span-hero">
+                                    </di>
+                                </div>
+                                <div class="info-cards-container">
                                     <div class="general-info">
-                                        <input class="input-marker" type="number">
+                                        <div class="info-date">
+                                            <span class="span-hero">30 de Nov, 10:00 hrs</span>
+                                        </div>
+                                        <input id="equipo47" name="equipo47" value="Francia" readonly class="span-hero">
+                                        <img class="countries" src="./assets/icons/francia.svg" alt="bandera francia">
+                                        <input class="input-marker" id="marcador47" name="marcador47" type="number">
+                                    </div>
+                                    <di class="general-info">
+                                        <div class="info-date1">
+                                            <span class="span-hero">Estadio Ciu. Educación</span>
+                                        </div>
+                                        <input class="input-marker" id="marcador48" name="marcador48" type="number">
                                         <img class="countries" src="./assets/icons/tunez.svg" alt="bandera de tunez">
-                                        <span class="span-hero">Túnez</span>
-                                    </div>
-                                </di>
+                                        <input id="equipo48" name="equipo48" value="Túnez" readonly class="span-hero">
+                                    </di>
+                                </div>
                             </div>
                         </div>
                         <!-- grupo E -->
@@ -647,127 +598,113 @@
                             </div>
                             <div class="info-cards">
                                 <div class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">23 de Nov, 8:00 hrs</span>
-                                    </div>
                                     <div class="general-info">
-                                        <span class="span-hero">Alemania</span>
+                                        <div class="info-date">
+                                            <span class="span-hero">23 de Nov, 8:00 hrs</span>
+                                        </div>
+                                        <input id="equipo49" name="equipo49" value="Alemania" readonly class="span-hero">
                                         <img class="countries" src="./assets/icons/alemania.svg" alt="bandera alemania">
-                                        <input class="input-marker" type="number">
-                                    </div>
-                                </div>
-                                <div class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">23 de Nov, 11:00 hrs</span>
+                                        <input class="input-marker" id="marcador49" name="marcador49" type="number">
                                     </div>
                                     <div class="general-info">
-                                        <span class="span-hero">España</span>
-                                        <img class="countries" src="./assets/icons/españa.svg" alt="bandera españa">
-                                        <input class="input-marker" type="number">
-                                    </div>
-                                </div>
-                                <div class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">27 de Nov, 5:00 hrs</span>
-                                    </div>
-                                    <div class="general-info">
-                                        <span class="span-hero">Costa Rica</span>
-                                        <img class="countries" src="./assets/icons/costa rica.svg" alt="bandera costa rica">
-                                        <input class="input-marker" type="number">
-                                    </div>
-                                </div>
-                                <div class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">27 de Nov, 14:00 hrs</span>
-                                    </div>
-                                    <div class="general-info">
-                                        <span class="span-hero">España</span>
-                                        <img class="countries" src="./assets/icons/españa.svg" alt="bandera españa">
-                                        <input class="input-marker" type="number">
-                                    </div>
-                                </div>
-                                <div class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">01 de Nov, 14:00 hrs</span>
-                                    </div>
-                                    <div class="general-info">
-                                        <span class="span-hero">España</span>
-                                        <img class="countries" src="./assets/icons/españa.svg" alt="bandera españa">
-                                        <input class="input-marker" type="number">
-                                    </div>
-                                </div>
-                                <div class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">01 de Dic, 14:00 hrs</span>
-                                    </div>
-                                    <div class="general-info">
-                                        <span class="span-hero">Costa Rica</span>
-                                        <img class="countries" src="./assets/icons/costa rica.svg" alt="bandera costa rica">
-                                        <input class="input-marker" type="number">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="info-cards">
-                                <di class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">Estadio Interna Khalifa</span>
-                                    </div>
-                                    <div class="general-info">
-                                        <input class="input-marker" type="number">
+                                        <div class="info-date1">
+                                            <span class="span-hero">Estadio Interna Khalifa</span>
+                                        </div>
+                                        <input class="input-marker" id="marcador50" name="marcador50" type="number">
                                         <img class="countries" src="./assets/icons/japon.svg" alt="bandera de japon">
-                                        <span class="span-hero">Japón</span>
+                                        <input id="equipo50" name="equipo50" value="Japón" readonly class="span-hero">
                                     </div>
-                                </di>
-                                <di class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">Estadio Al Thumama</span>
+                                </div>
+                                <div class="info-cards-container">
+                                    <div class="general-info">
+                                        <div class="info-date">
+                                            <span class="span-hero">23 de Nov, 11:00 hrs</span>
+                                        </div>
+                                        <input id="equipo51" name="equipo51" value="España" readonly class="span-hero">
+                                        <img class="countries" src="./assets/icons/españa.svg" alt="bandera españa">
+                                        <input class="input-marker" id="marcador51" name="marcador51" type="number">
                                     </div>
                                     <div class="general-info">
-                                        <input class="input-marker" type="number">
+                                        <div class="info-date1">
+                                            <span class="span-hero">Estadio Al Thumama</span>
+                                        </div>
+                                        <input class="input-marker" id="marcador52" name="marcador52" type="number">
                                         <img class="countries" src="./assets/icons/costa rica.svg" alt="bandera de costa rica">
-                                        <span class="span-hero">Costa Rica</span>
+                                        <input id="equipo52" name="equipo52" value="Costa Rica" readonly class="span-hero">
                                     </div>
-                                </di>
-                                <di class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">Estadio Ahmed BIn Ali</span>
+                                </div>
+                                <div class="info-cards-container">
+                                    <div class="general-info">
+                                        <div class="info-date">
+                                            <span class="span-hero">27 de Nov, 5:00 hrs</span>
+                                        </div>
+                                        <input id="equipo53" name="equipo53" value="Costa Rica" readonly class="span-hero">
+                                        <img class="countries" src="./assets/icons/costa rica.svg" alt="bandera costa rica">
+                                        <input class="input-marker" id="marcador53" name="marcador53" type="number">
                                     </div>
                                     <div class="general-info">
-                                        <input class="input-marker" type="number">
+                                        <div class="info-date1">
+                                            <span class="span-hero">Estadio Ahmed BIn Ali</span>
+                                        </div>
+                                        <input class="input-marker" id="marcador54" name="marcador54" type="number">
                                         <img class="countries" src="./assets/icons/japon.svg" alt="bandera de japon">
-                                        <span class="span-hero">Japón</span>
+                                        <input id="equipo54" name="equipo54" value="Japón" readonly class="span-hero">
                                     </div>
-                                </di>
-                                <di class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">Estadio Al Bayt</span>
+                                </div>
+                                <div class="info-cards-container">
+                                    <div class="general-info">
+                                        <div class="info-date">
+                                            <span class="span-hero">27 de Nov, 14:00 hrs</span>
+                                        </div>
+                                        <input id="equipo55" name="equipo55" value="España" readonly class="span-hero">
+                                        <img class="countries" src="./assets/icons/españa.svg" alt="bandera españa">
+                                        <input class="input-marker" id="marcador55" name="marcador55" type="number">
                                     </div>
                                     <div class="general-info">
-                                        <input class="input-marker" type="number">
+                                        <div class="info-date1">
+                                            <span class="span-hero">Estadio Al Bayt</span>
+                                        </div>
+                                        <input class="input-marker" id="marcador56" name="marcador56" type="number">
                                         <img class="countries" src="./assets/icons/alemania.svg" alt="bandera de Alemania">
-                                        <span class="span-hero">Alemania</span>
+                                        <input id="equipo56" name="equipo56" value="Alemania" readonly class="span-hero">
                                     </div>
-                                </di>
-                                <di class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">Estadio Interna Khalifa</span>
+                                </div>
+                                <div class="info-cards-container">
+                                    <div class="general-info">
+                                        <div class="info-date">
+                                            <span class="span-hero">01 de Nov, 14:00 hrs</span>
+                                        </div>
+                                        <input id="equipo57" name="equipo57" value="España" readonly class="span-hero">
+                                        <img class="countries" src="./assets/icons/españa.svg" alt="bandera españa">
+                                        <input class="input-marker" id="marcador57" name="marcador57" type="number">
                                     </div>
                                     <div class="general-info">
-                                        <input class="input-marker" type="number">
+                                        <div class="info-date1">
+                                            <span class="span-hero">Estadio Interna Khalifa</span>
+                                        </div>
+                                        <input class="input-marker" id="marcador58" name="marcador58" type="number">
                                         <img class="countries" src="./assets/icons/japon.svg" alt="bandera de japon">
-                                        <span class="span-hero">Japón</span>
+                                        <input id="equipo58" name="equipo58" value="Japón" readonly class="span-hero">
                                     </div>
-                                </di>
-                                <di class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">Estadio Al Bayt</span>
+                                </div>
+                                <div class="info-cards-container">
+                                    <div class="general-info">
+                                        <div class="info-date">
+                                            <span class="span-hero">01 de Dic, 14:00 hrs</span>
+                                        </div>
+                                        <input id="equipo59" name="equipo59" value="Costa Rica" readonly class="span-hero">
+                                        <img class="countries" src="./assets/icons/costa rica.svg" alt="bandera costa rica">
+                                        <input class="input-marker" id="marcador59" name="marcador59" type="number">
                                     </div>
                                     <div class="general-info">
-                                        <input class="input-marker" type="number">
+                                        <div class="info-date1">
+                                            <span class="span-hero">Estadio Al Bayt</span>
+                                        </div>
+                                        <input class="input-marker" id="marcador60" name="marcador60" type="number">
                                         <img class="countries" src="./assets/icons/alemania.svg" alt="bandera de Alemania">
-                                        <span class="span-hero">Alemania</span>
+                                        <input id="equipo60" name="equipo60" value="Alemania" readonly class="span-hero">
                                     </div>
-                                </di>
+                                </div>
                             </div>
                         </div>
                         <!-- grupo F -->
@@ -779,127 +716,113 @@
                             </div>
                             <div class="info-cards">
                                 <div class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">23 de Nov, 5:00 hrs</span>
-                                    </div>
                                     <div class="general-info">
-                                        <span class="span-hero">Marruecos</span>
+                                        <div class="info-date">
+                                            <span class="span-hero">23 de Nov, 5:00 hrs</span>
+                                        </div>
+                                        <input id="equipo61" name="equipo61" value="Marruecos" readonly class="span-hero">
                                         <img class="countries" src="./assets/icons/marruecos.svg" alt="bandera marruecos">
-                                        <input class="input-marker" type="number">
-                                    </div>
-                                </div>
-                                <div class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">23 de Nov, 14:00 hrs</span>
+                                        <input class="input-marker" id="marcador61" name="marcador61" type="number">
                                     </div>
                                     <div class="general-info">
-                                        <span class="span-hero">Bélgica</span>
-                                        <img class="countries" src="./assets/icons/belgica.svg" alt="bandera belgica.svg">
-                                        <input class="input-marker" type="number">
-                                    </div>
-                                </div>
-                                <div class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">27 de Nov, 8:00 hrs</span>
-                                    </div>
-                                    <div class="general-info">
-                                        <span class="span-hero">Bélgica</span>
-                                        <img class="countries" src="./assets/icons/belgica.svg" alt="bandera belgica.svg">
-                                        <input class="input-marker" type="number">
-                                    </div>
-                                </div>
-                                <div class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">27 de Nov, 11:00 hrs</span>
-                                    </div>
-                                    <div class="general-info">
-                                        <span class="span-hero">Canada</span>
-                                        <img class="countries" src="./assets/icons/canada.svg" alt="bandera canada">
-                                        <input class="input-marker" type="number">
-                                    </div>
-                                </div>
-                                <div class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">01 de Dic, 11:00 hrs</span>
-                                    </div>
-                                    <div class="general-info">
-                                        <span class="span-hero">Bélgica</span>
-                                        <img class="countries" src="./assets/icons/belgica.svg" alt="bandera belgica.svg">
-                                        <input class="input-marker" type="number">
-                                    </div>
-                                </div>
-                                <div class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">01 de Dic, 10:00 hrs</span>
-                                    </div>
-                                    <div class="general-info">
-                                        <span class="span-hero">Canada</span>
-                                        <img class="countries" src="./assets/icons/canada.svg" alt="bandera canada">
-                                        <input class="input-marker" type="number">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="info-cards">
-                                <di class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">Estadio Al Bayt</span>
-                                    </div>
-                                    <div class="general-info">
-                                        <input class="input-marker" type="number">
+                                        <div class="info-date1">
+                                            <span class="span-hero">Estadio Al Bayt</span>
+                                        </div>
+                                        <input class="input-marker" id="marcador62" name="marcador62" type="number">
                                         <img class="countries" src="./assets/icons/croacia.svg" alt="bandera de croacia">
-                                        <span class="span-hero">Croacia</span>
+                                        <input id="equipo62" name="equipo62" value="Croacia" readonly class="span-hero">
                                     </div>
-                                </di>
-                                <di class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">Estadio Ahmed Bin Ali</span>
+                                </div>
+                                <div class="info-cards-container">
+                                    <div class="general-info">
+                                        <div class="info-date">
+                                            <span class="span-hero">23 de Nov, 14:00 hrs</span>
+                                        </div>
+                                        <input id="equipo63" name="equipo63" value="Bélgica" readonly class="span-hero">
+                                        <img class="countries" src="./assets/icons/belgica.svg" alt="bandera belgica.svg">
+                                        <input class="input-marker" id="marcador63" name="marcador63" type="number">
                                     </div>
                                     <div class="general-info">
-                                        <input class="input-marker" type="number">
+                                        <div class="info-date1">
+                                            <span class="span-hero">Estadio Ahmed Bin Ali</span>
+                                        </div>
+                                        <input class="input-marker" id="marcador64" name="marcador64" type="number">
                                         <img class="countries" src="./assets/icons/canada.svg" alt="bandera de canada">
-                                        <span class="span-hero">Canada</span>
+                                        <input id="equipo64" name="equipo64" value="Canada" readonly class="span-hero">
                                     </div>
-                                </di>
-                                <di class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">Estadio Al Thumama</span>
+                                </div>
+                                <div class="info-cards-container">
+                                    <div class="general-info">
+                                        <div class="info-date">
+                                            <span class="span-hero">27 de Nov, 8:00 hrs</span>
+                                        </div>
+                                        <input id="equipo65" name="equipo65" value="Bélgica" readonly class="span-hero">
+                                        <img class="countries" src="./assets/icons/belgica.svg" alt="bandera belgica.svg">
+                                        <input class="input-marker" id="marcador65" name="marcador65" type="number">
                                     </div>
                                     <div class="general-info">
-                                        <input class="input-marker" type="number">
+                                        <div class="info-date1">
+                                            <span class="span-hero">Estadio Al Thumama</span>
+                                        </div>
+                                        <input class="input-marker" id="marcador66" name="marcador66" type="number">
                                         <img class="countries" src="./assets/icons/marruecos.svg" alt="bandera de marruecos">
-                                        <span class="span-hero">Marruecos</span>
+                                        <input id="equipo66" name="equipo66" value="Marruecos" readonly class="span-hero">
                                     </div>
-                                </di>
-                                <di class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">Estadio Interna Khalifa</span>
+                                </div>
+                                <div class="info-cards-container">
+                                    <div class="general-info">
+                                        <div class="info-date">
+                                            <span class="span-hero">27 de Nov, 11:00 hrs</span>
+                                        </div>
+                                        <input id="equipo67" name="equipo67" value="Canada" readonly class="span-hero">
+                                        <img class="countries" src="./assets/icons/canada.svg" alt="bandera canada">
+                                        <input class="input-marker" id="marcador67" name="marcador67" type="number">
                                     </div>
                                     <div class="general-info">
-                                        <input class="input-marker" type="number">
+                                        <div class="info-date1">
+                                            <span class="span-hero">Estadio Interna Khalifa</span>
+                                        </div>
+                                        <input class="input-marker" id="marcador68" name="marcador68" type="number">
                                         <img class="countries" src="./assets/icons/croacia.svg" alt="bandera de croacia">
-                                        <span class="span-hero">Croacia</span>
+                                        <input id="equipo68" name="equipo68" value="Croacia" readonly class="span-hero">
                                     </div>
-                                </di>
-                                <di class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">Estadio Ahmed Bin Ali</span>
+                                </div>
+                                <div class="info-cards-container">
+                                    <div class="general-info">
+                                        <div class="info-date">
+                                            <span class="span-hero">01 de Dic, 11:00 hrs</span>
+                                        </div>
+                                        <input id="equipo69" name="equipo69" value="Bélgica" readonly class="span-hero">
+                                        <img class="countries" src="./assets/icons/belgica.svg" alt="bandera belgica.svg">
+                                        <input class="input-marker" id="marcador69" name="marcador69" type="number">
                                     </div>
                                     <div class="general-info">
-                                        <input class="input-marker" type="number">
+                                        <div class="info-date1">
+                                            <span class="span-hero">Estadio Ahmed Bin Ali</span>
+                                        </div>
+                                        <input class="input-marker" id="marcador70" name="marcador70" type="number">
                                         <img class="countries" src="./assets/icons/croacia.svg" alt="bandera de croacia">
-                                        <span class="span-hero">Croacia</span>
+                                        <input id="equipo70" name="equipo70" value="Croacia" readonly class="span-hero">
                                     </div>
-                                </di>
-                                <di class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">Estadio Al Thumama</span>
+                                </div>
+                                <div class="info-cards-container">
+                                    <div class="general-info">
+                                        <div class="info-date">
+                                            <span class="span-hero">01 de Dic, 10:00 hrs</span>
+                                        </div>
+                                        <input id="equipo71" name="equipo71" value="Canada" readonly class="span-hero">
+                                        <img class="countries" src="./assets/icons/canada.svg" alt="bandera canada">
+                                        <input class="input-marker" id="marcador71" name="marcador71" type="number">
                                     </div>
                                     <div class="general-info">
-                                        <input class="input-marker" type="number">
+                                        <div class="info-date1">
+                                            <span class="span-hero">Estadio Al Thumama</span>
+                                        </div>
+                                        <input class="input-marker" id="marcador72" name="marcador72" type="number">
                                         <img class="countries" src="./assets/icons/marruecos.svg" alt="bandera de marruecos">
-                                        <span class="span-hero">Marruecos</span>
+                                        <input id="equipo72" name="equipo72" value="Marruecos" readonly class="span-hero">
                                     </div>
-                                </di>
+                                </div>
                             </div>
                         </div>
                         <!-- Grupo G -->
@@ -911,129 +834,115 @@
                             </div>
                             <div class="info-cards">
                                 <div class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">24 de Nov, 5:00 hrs</span>
-                                    </div>
                                     <div class="general-info">
-                                        <span class="span-hero">Suiza</span>
+                                        <div class="info-date">
+                                            <span class="span-hero">24 de Nov, 5:00 hrs</span>
+                                        </div>
+                                        <input id="equipo73" name="equipo73" value="Suiza" readonly class="span-hero">
                                         <img class="countries" src="./assets/icons/suiza.svg" alt="bandera suiza">
-                                        <input class="input-marker" type="number">
-                                    </div>
-                                </div>
-                                <div class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">24 de Nov, 14:00 hrs</span>
+                                        <input class="input-marker" id="marcador73" name="marcador73" type="number">
                                     </div>
                                     <div class="general-info">
-                                        <span class="span-hero">Brazil</span>
-                                        <img class="countries" src="./assets/icons/brazil.svg" alt="bandera brazil.svg">
-                                        <input class="input-marker" type="number">
-                                    </div>
-                                </div>
-                                <div class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">28 de Nov, 5:00 hrs</span>
-                                    </div>
-                                    <div class="general-info">
-                                        <span class="span-hero">Serbia</span>
-                                        <img class="countries" src="./assets/icons/serbia.svg" alt="bandera serbia.svg">
-                                        <input class="input-marker" type="number">
-                                    </div>
-                                </div>
-                                <div class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">28 de Nov, 11:00 hrs</span>
-                                    </div>
-                                    <div class="general-info">
-                                        <span class="span-hero">Brazil</span>
-                                        <img class="countries" src="./assets/icons/brazil.svg" alt="bandera brazil.svg">
-                                        <input class="input-marker" type="number">
-                                    </div>
-                                </div>
-                                <div class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">02 de Dic, 14:00 hrs</span>
-                                    </div>
-                                    <div class="general-info">
-                                        <span class="span-hero">Brazil</span>
-                                        <img class="countries" src="./assets/icons/brazil.svg" alt="bandera brazil.svg">
-                                        <input class="input-marker" type="number">
-                                    </div>
-                                </div>
-                                <div class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">02 de Dic, 14:00 hrs</span>
-                                    </div>
-                                    <div class="general-info">
-                                        <span class="span-hero">Serbia</span>
-                                        <img class="countries" src="./assets/icons/serbia.svg" alt="bandera serbia.svg">
-                                        <input class="input-marker" type="number">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="info-cards">
-                                <di class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">Estadio Al Janoub</span>
-                                    </div>
-                                    <div class="general-info">
-                                        <input class="input-marker" type="number">
+                                        <div class="info-date1">
+                                            <span class="span-hero">Estadio Al Janoub</span>
+                                        </div>
+                                        <input class="input-marker" id="marcador74" name="marcador74" type="number">
                                         <img class="countries" src="./assets/icons/camerun.svg" alt="bandera de camerun">
-                                        <span class="span-hero">Camerún</span>
+                                        <input id="equipo74" name="equipo74" value="Camerún" readonly class="span-hero">
                                     </div>
-                                </di>
-                                <di class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">Estadio Lusail</span>
+                                </div>
+                                <div class="info-cards-container">
+                                    <div class="general-info">
+                                        <div class="info-date">
+                                            <span class="span-hero">24 de Nov, 14:00 hrs</span>
+                                        </div>
+                                        <input id="equipo75" name="equipo75" value="Brazil" readonly class="span-hero">
+                                        <img class="countries" src="./assets/icons/brazil.svg" alt="bandera brazil.svg">
+                                        <input class="input-marker" id="marcador75" name="marcador75" type="number">
                                     </div>
                                     <div class="general-info">
-                                        <input class="input-marker" type="number">
+                                        <div class="info-date1">
+                                            <span class="span-hero">Estadio Lusail</span>
+                                        </div>
+                                        <input class="input-marker" id="marcador76" name="marcador76" type="number">
                                         <img class="countries" src="./assets/icons/serbia.svg" alt="bandera de serbia">
-                                        <span class="span-hero">Serbia</span>
+                                        <input id="equipo76" name="equipo76" value="Serbia" readonly class="span-hero">
                                     </div>
-                                </di>
-                                <di class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">Estadio Al Janoub</span>
+                                </div>
+                                <div class="info-cards-container">
+                                    <div class="general-info">
+                                        <div class="info-date">
+                                            <span class="span-hero">28 de Nov, 5:00 hrs</span>
+                                        </div>
+                                        <input id="equipo77" name="equipo77" value="Serbia" readonly class="span-hero">
+                                        <img class="countries" src="./assets/icons/serbia.svg" alt="bandera serbia.svg">
+                                        <input class="input-marker" id="marcador77" name="marcador77" type="number">
                                     </div>
                                     <div class="general-info">
-                                        <input class="input-marker" type="number">
+                                        <div class="info-date1">
+                                            <span class="span-hero">Estadio Al Janoub</span>
+                                        </div>
+                                        <input class="input-marker" id="marcador78" name="marcador78" type="number">
                                         <img class="countries" src="./assets/icons/camerun.svg" alt="bandera de camerun">
-                                        <span class="span-hero">Camerún</span>
+                                        <input id="equipo78" name="equipo78" value="Camerún" readonly class="span-hero">
                                     </div>
-                                </di>
-                                <di class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">Estadio 974</span>
+                                </div>
+                                <div class="info-cards-container">
+                                    <div class="general-info">
+                                        <div class="info-date">
+                                            <span class="span-hero">28 de Nov, 11:00 hrs</span>
+                                        </div>
+                                        <input id="equipo79" name="equipo79" value="Brazil" readonly class="span-hero">
+                                        <img class="countries" src="./assets/icons/brazil.svg" alt="bandera brazil.svg">
+                                        <input class="input-marker" id="marcador79" name="marcador79" type="number">
                                     </div>
                                     <div class="general-info">
-                                        <input class="input-marker" type="number">
+                                        <div class="info-date1">
+                                            <span class="span-hero">Estadio 974</span>
+                                        </div>
+                                        <input class="input-marker" id="marcador80" name="marcador80" type="number">
                                         <img class="countries" src="./assets/icons/suiza.svg" alt="bandera de suiza">
-                                        <span class="span-hero">Suiza</span>
+                                        <input id="equipo80" name="equipo80" value="Suiza" readonly class="span-hero">
                                     </div>
-                                </di>
-                                <di class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">Estadio Lusail</span>
+                                </div>
+                                <div class="info-cards-container">
+                                    <div class="general-info">
+                                        <div class="info-date">
+                                            <span class="span-hero">02 de Dic, 14:00 hrs</span>
+                                        </div>
+                                        <input id="equipo81" name="equipo81" value="Brazil" readonly class="span-hero">
+                                        <img class="countries" src="./assets/icons/brazil.svg" alt="bandera brazil.svg">
+                                        <input class="input-marker" id="marcador81" name="marcador81"  type="number">
                                     </div>
                                     <div class="general-info">
-                                        <input class="input-marker" type="number">
+                                        <div class="info-date1">
+                                            <span class="span-hero">Estadio Lusail</span>
+                                        </div>
+                                        <input class="input-marker" id="marcador82" name="marcador82"  type="number">
                                         <img class="countries" src="./assets/icons/camerun.svg" alt="bandera de camerun">
-                                        <span class="span-hero">Camerún</span>
+                                        <input id="equipo82" name="equipo82" value="Camerún" readonly class="span-hero">
                                     </div>
-                                </di>
-                                <di class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">Estadio 974</span>
+                                </div>
+                                <div class="info-cards-container">
+                                    <div class="general-info">
+                                        <div class="info-date">
+                                            <span class="span-hero">02 de Dic, 14:00 hrs</span>
+                                        </div>
+                                        <input id="equipo83" name="equipo83" value="Serbia" readonly class="span-hero">
+                                        <img class="countries" src="./assets/icons/serbia.svg" alt="bandera serbia.svg">
+                                        <input class="input-marker" id="marcador83" name="marcador83"  type="number">
                                     </div>
                                     <div class="general-info">
-                                        <input class="input-marker" type="number">
+                                        <div class="info-date1">
+                                            <span class="span-hero">Estadio 974</span>
+                                        </div>
+                                        <input class="input-marker" id="marcador84" name="marcador84"  type="number">
                                         <img class="countries" src="./assets/icons/suiza.svg" alt="bandera de suiza">
-                                        <span class="span-hero">Suiza</span>
+                                        <input id="equipo84" name="equipo84" value="Suiza" readonly class="span-hero">
                                     </div>
-                                </di>
+                                </div>
                             </div>
-                        </div>
+                        </div> -->
                         <!-- grupo H -->
                         <div class="cards-marcadores">
                             <div class="cards-marcadores-title">
@@ -1043,127 +952,113 @@
                             </div>
                             <div class="info-cards">
                                 <div class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">24 de Nov, 8:00 hrs</span>
-                                    </div>
                                     <div class="general-info">
-                                        <span class="span-hero">Uruguay</span>
+                                        <div class="info-date">
+                                            <span class="span-hero">24 de Nov, 8:00 hrs</span>
+                                        </div>
+                                        <input id="equipo85" name="equipo85" value="Uruguay" readonly class="span-hero">
                                         <img class="countries" src="./assets/icons/uruguay.svg" alt="bandera uruguay">
-                                        <input class="input-marker" type="number">
-                                    </div>
-                                </div>
-                                <div class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">24 de Nov, 11:00 hrs</span>
+                                        <input class="input-marker" id="marcador85" name="marcador85" type="number">
                                     </div>
                                     <div class="general-info">
-                                        <span class="span-hero">Portugal</span>
-                                        <img class="countries" src="./assets/icons/portugal.svg" alt="bandera portugal.svg">
-                                        <input class="input-marker" type="number">
-                                    </div>
-                                </div>
-                                <div class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">28 de Nov, 8:00 hrs</span>
-                                    </div>
-                                    <div class="general-info">
-                                        <span class="span-hero">Ghana</span>
-                                        <img class="countries" src="./assets/icons/ghana.svg" alt="bandera ghana.svg">
-                                        <input class="input-marker" type="number">
-                                    </div>
-                                </div>
-                                <div class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">28 de Nov, 14:00 hrs</span>
-                                    </div>
-                                    <div class="general-info">
-                                        <span class="span-hero">Portugal</span>
-                                        <img class="countries" src="./assets/icons/portugal.svg" alt="bandera portugal.svg">
-                                        <input class="input-marker" type="number">
-                                    </div>
-                                </div>
-                                <div class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">02 de Dic, 10:00 hrs</span>
-                                    </div>
-                                    <div class="general-info">
-                                        <span class="span-hero">Portugal</span>
-                                        <img class="countries" src="./assets/icons/portugal.svg" alt="bandera portugal.svg">
-                                        <input class="input-marker" type="number">
-                                    </div>
-                                </div>
-                                <div class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">02 de Dic, 10:00 hrs</span>
-                                    </div>
-                                    <div class="general-info">
-                                        <span class="span-hero">Ghana</span>
-                                        <img class="countries" src="./assets/icons/ghana.svg" alt="bandera ghana.svg">
-                                        <input class="input-marker" type="number">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="info-cards">
-                                <di class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">Estadio Ciu Educación</span>
-                                    </div>
-                                    <div class="general-info">
-                                        <input class="input-marker" type="number">
+                                        <div class="info-date1">
+                                            <span class="span-hero">Estadio Ciu Educación</span>
+                                        </div>
+                                        <input class="input-marker" id="marcador86" name="marcador86" type="number">
                                         <img class="countries" src="./assets/icons/corea del sur.svg" alt="bandera de corea del sur">
-                                        <span class="span-hero">Corea del Sur</span>
+                                        <input id="equipo86" name="equipo86" value="Corea del Sur" readonly class="span-hero">
                                     </div>
-                                </di>
-                                <di class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">Estadio 974</span>
+                                </div>
+                                <div class="info-cards-container">
+                                    <div class="general-info">
+                                        <div class="info-date">
+                                            <span class="span-hero">24 de Nov, 11:00 hrs</span>
+                                        </div>
+                                        <input id="equipo87" name="equipo87" value="Portugal" readonly class="span-hero">
+                                        <img class="countries" src="./assets/icons/portugal.svg" alt="bandera portugal.svg">
+                                        <input class="input-marker" id="marcador87" name="marcador87" type="number">
                                     </div>
                                     <div class="general-info">
-                                        <input class="input-marker" type="number">
+                                        <div class="info-date1">
+                                            <span class="span-hero">Estadio 974</span>
+                                        </div>
+                                        <input class="input-marker" id="marcador88" name="marcador88" type="number">
                                         <img class="countries" src="./assets/icons/ghana.svg" alt="bandera de ghana">
-                                        <span class="span-hero">Ghana</span>
+                                        <input id="equipo88" name="equipo88" value="Ghana" readonly class="span-hero">
                                     </div>
-                                </di>
-                                <di class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">Estadio Ciu Educación</span>
+                                </div>
+                                <div class="info-cards-container">
+                                    <div class="general-info">
+                                        <div class="info-date">
+                                            <span class="span-hero">28 de Nov, 8:00 hrs</span>
+                                        </div>
+                                        <input id="equipo89" name="equipo89" value="Ghana" readonly class="span-hero">
+                                        <img class="countries" src="./assets/icons/ghana.svg" alt="bandera ghana.svg">
+                                        <input class="input-marker" id="marcador89" name="marcador89"  type="number">
                                     </div>
                                     <div class="general-info">
-                                        <input class="input-marker" type="number">
+                                        <div class="info-date1">
+                                            <span class="span-hero">Estadio Ciu Educación</span>
+                                        </div>
+                                        <input class="input-marker" id="marcador90" name="marcador90"  type="number">
                                         <img class="countries" src="./assets/icons/corea del sur.svg" alt="bandera de corea del sur">
-                                        <span class="span-hero">Corea del Sur</span>
+                                        <input id="equipo90" name="equipo90" value="Corea del Sur" readonly class="span-hero">
                                     </div>
-                                </di>
-                                <di class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">Estadio Lusail</span>
+                                </div>
+                                <div class="info-cards-container">
+                                    <div class="general-info">
+                                        <div class="info-date">
+                                            <span class="span-hero">28 de Nov, 14:00 hrs</span>
+                                        </div>
+                                        <input id="equipo91" name="equipo91" value="Portugal" readonly class="span-hero">
+                                        <img class="countries" src="./assets/icons/portugal.svg" alt="bandera portugal.svg">
+                                        <input class="input-marker" id="marcador91" name="marcador91"  type="number">
                                     </div>
                                     <div class="general-info">
-                                        <input class="input-marker" type="number">
+                                        <div class="info-date1">
+                                            <span class="span-hero">Estadio Lusail</span>
+                                        </div>
+                                        <input class="input-marker" id="marcador92" name="marcador92"  type="number">
                                         <img class="countries" src="./assets/icons/uruguay.svg" alt="bandera de uruguay">
-                                        <span class="span-hero">Uruguay</span>
+                                        <input id="equipo92" name="equipo92" value="Uruguay" readonly class="span-hero">
                                     </div>
-                                </di>
-                                <di class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">Estadio Ciu Educación</span>
+                                </div>
+                                <div class="info-cards-container">
+                                    <div class="general-info">
+                                        <div class="info-date">
+                                            <span class="span-hero">02 de Dic, 10:00 hrs</span>
+                                        </div>
+                                        <input id="equipo93" name="equipo93" value="Portugal" readonly class="span-hero">
+                                        <img class="countries" src="./assets/icons/portugal.svg" alt="bandera portugal.svg">
+                                        <input class="input-marker" id="marcador93" name="marcador93"  type="number">
                                     </div>
                                     <div class="general-info">
-                                        <input class="input-marker" type="number">
+                                        <div class="info-date1">
+                                            <span class="span-hero">Estadio Ciu Educación</span>
+                                        </div>
+                                        <input class="input-marker" id="marcador94" name="marcador94"  type="number">
                                         <img class="countries" src="./assets/icons/corea del sur.svg" alt="bandera de corea del sur">
-                                        <span class="span-hero">Corea del Sur</span>
+                                        <input id="equipo94" name="equipo94" value="Corea del Sur" readonly class="span-hero">
                                     </div>
-                                </di>
-                                <di class="info-cards-container">
-                                    <div class="info-date">
-                                        <span class="span-hero">Estadio Al Janoub</span>
-                                    </div>
+                                </div>
+                                <div class="info-cards-container">
                                     <div class="general-info">
-                                        <input class="input-marker" type="number">
-                                        <img class="countries" src="./assets/icons/uruguay.svg" alt="bandera de uruguay">
-                                        <span class="span-hero">Uruguay</span>
+                                        <div class="info-date">
+                                            <span class="span-hero">02 de Dic, 10:00 hrs</span>
+                                        </div>
+                                        <input id="equipo95" name="equipo95" value="Ghana" readonly class="span-hero">
+                                        <img class="countries" src="./assets/icons/ghana.svg" alt="bandera ghana.svg">
+                                        <input class="input-marker" id="marcador95" name="marcador95"  type="number">
                                     </div>
-                                </di>
+                                    <di class="general-info">
+                                        <div class="info-date1">
+                                            <span class="span-hero">Estadio Al Janoub</span>
+                                        </div>
+                                        <input class="input-marker" id="marcador96" name="marcador96"  type="number">
+                                        <img class="countries" src="./assets/icons/uruguay.svg" alt="bandera de uruguay">
+                                        <input id="equipo96" name="equipo96" value="Uruguay" readonly class="span-hero">
+                                    </di>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1209,8 +1104,8 @@
             </footer>
         </section>
         
-        <script src="./js/marcadores.js"></script>
         <script src="./js/perfil.js"></script>
+        <script src="./js/marcadores.js"></script>
         <script src="./js/main.js"></script>
     </body>
     </html>

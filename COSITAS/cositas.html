@@ -69,3 +69,57 @@ WITH (
 );
 ALTER TABLE marcadores
   OWNER TO postgres;
+
+
+  $ncarton = intval($_POST["marcador-carton"]);
+  $cedula = intval($_POST["marcador-cedula"]);
+  $fase = intval($_POST["marcador-fase"]);
+  $grupo = strval($_POST["grupo-a"]);
+  $perfil = intval($_POST["marcador-perfil"]);
+  $equipoUno = strval($_POST["equipoUno"]);
+  $marcadorUno = intval($_POST["marcadorUno"]);
+  $equipoDos = strval($_POST["equipoDos"]);
+  $marcadorDos = intval($_POST["marcadorDos"]);
+  $fecha = strval($_POST["marcador-fecha"]);
+  
+  try {
+      $pdo = $conexion->prepare("INSERT INTO marcadores(carton, cedula, fase, grupo, perfil, equipo_uno, marcador_uno, equipo_dos, marcador_dos, fecha) VALUES
+      ($ncarton,$cedula,$fase,'$grupo',$perfil,'$equipoUno',$marcadorUno,'$equipoDos',$marcadorDos,'$fecha')");
+  
+      $pdo->execute();
+      print($pdo->errorInfo());
+  
+      echo json_encode('true');
+  } catch (PDOException $error) {
+      echo json_encode($error->getMessage());
+      die();
+  }
+
+
+try {
+  if (isset($_POST["marcador-carton"])) {
+      foreach($_POST["marcador-carton"] as $indice => $nombre) {
+          $nomben = $_POST["marcador-carton"][$indice];
+          $cedula = $_POST["marcador-cedula"][$indice];
+          $fase = $_POST["marcador-fase"][$indice];
+          $grupo = $_POST["grupo-a"][$indice];
+          $perfil = $_POST["marcador-perfil"][$indice];
+          $equipoUno = $_POST["equipoUno"][$indice];
+          $marcadorUno = $_POST["marcadorUno"][$indice];
+          $equipoDos = $_POST["equipoDos"][$indice];
+          $marcadorDos = $_POST["marcadorDos"][$indice];
+          $fecha = $_POST["marcador-fecha"][$indice];
+
+          
+          $pdo = $conexion->prepare("INSERT INTO marcadores(carton, cedula, fase, grupo, perfil, equipo_uno, marcador_uno, equipo_dos, marcador_dos, fecha) VALUES ($ncarton,$cedula,$fase,'$grupo',$perfil,$equipoUno,$marcadorUno,$equipoDos,$marcadorUno,'$fecha')");
+
+          $pdo->execute();
+          print($pdo->errorInfo());
+      }
+  }
+
+  // echo json_encode('true');
+} catch (PDOException $error) {
+  echo $error->getMessage();
+  die();
+}

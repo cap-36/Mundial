@@ -19,3 +19,4 @@ function dateNow() {
     var f = new Date();
     pfecha.value = (f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear());
 }
+
