@@ -4,7 +4,7 @@ include('php/conexion.php');
 $error = false;
 
 try {
-    $consulta = $conexion->prepare("SELECT carton as carton, correo as correo, cedula as cedula, fase as fase, orden as orden, puntos as puntos FROM cartones");
+    $consulta = $conexion->prepare("SELECT id as id, codigo as codigo FROM codigos");
 
     $respuesta = $consulta->execute();
     while($datos = $consulta->fetchAll(PDO::FETCH_ASSOC)) {

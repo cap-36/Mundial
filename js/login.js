@@ -17,7 +17,7 @@ btnLogin.addEventListener('click', function(e) {
         // console.log(data);
         for (let i = 0; i < data.length; i++) {
             var element = data[i];
-            // console.log(element);
+            console.log(element);
             if (element.correo === correoLG.value && element.carton == NumCartonLG.value) {
                 let usuario = {
                     correo: element.correo,
@@ -29,7 +29,6 @@ btnLogin.addEventListener('click', function(e) {
                 };
                 localStorage.setItem("usuario", JSON.stringify(usuario));
 
-
                 const options = {
                     method: 'POST'
                 }
@@ -40,7 +39,7 @@ btnLogin.addEventListener('click', function(e) {
                     // const usuarios = [];
                     // usuarios.push(data);
                     data.forEach(usuario => {
-                        console.log([usuario.correo]);
+                        console.log(usuario.correo);
                         if (correoLG.value == usuario.correo) {
                             window.location.href = 'index.html';
                         } else {
